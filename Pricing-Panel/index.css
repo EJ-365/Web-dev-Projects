@@ -36,6 +36,13 @@ body {
   padding-left: 15px;
   padding-top: 6px;
   padding-bottom: 6px;
+  transition: transform 0.3s;
+}
+.special-sign-up:hover {
+  transform: scale(1.5); /* Scale up to 110% */
+  box-shadow: 0 2px 2px green; /* Shadow effect */
+  transform: rotate(300deg);
+  cursor: pointer;
 }
 
 /* header call to action */
