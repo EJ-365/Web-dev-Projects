@@ -1,5 +1,45 @@
+/* adding margin to the nav element wrapping the navbar */
+nav {
+  margin: 0px 32.3333px;
+}
+
+/* company logo syling */
 .logo-image {
-  max-width: 100px;
   height: auto;
-  border-radius: 50%;
+  width: 120px;
+}
+
+/* change the body background-color to  #eafaf1 */
+body {
+  background-color: #eafaf1;
+  font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* styling the links inside the navbar */
+.navbar ul li a {
+  color: #00ad6a;
+  font-size: 16px;
+  font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 650;
+  line-height: 24px;
+}
+
+/* nav-links on hovering/ when hover the color changes to black  */
+.navbar ul li a:hover {
+  color: #080c16;
+}
+
+/* styling the special sign-up button button for animation effect */
+.special-sign-up {
+  border: 2px solid;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+/* header call to action */
+.header h1 {
+  font-weight: bold;
+  font-size: 3.5em;
 }
