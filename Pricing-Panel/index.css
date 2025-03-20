@@ -6,7 +6,7 @@ nav {
 /* company logo syling */
 .logo-image {
   height: auto;
-  width: 120px;
+  width: 130px;
 }
 
 /* change the body background-color to  #eafaf1 */
@@ -32,21 +32,39 @@ body {
 /* styling the special sign-up button button for animation effect */
 .special-sign-up {
   border: 2px solid;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  transition: transform 0.3s;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: #00ad6a;
+  transition: all 0.2s ease; /* Smooth transition */
 }
 .special-sign-up:hover {
-  transform: scale(1.5); /* Scale up to 110% */
-  box-shadow: 0 2px 2px green; /* Shadow effect */
-  transform: rotate(300deg);
+  box-shadow: -5px 5px #00ad6a;
+  transform: translate(4px, 2px);
   cursor: pointer;
 }
 
 /* header call to action */
 .header h1 {
   font-weight: bold;
-  font-size: 3.5em;
+  font-size: 3.7em;
+}
+
+/*  navbar collapsing */
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.collapse ul li a {
+  margin: 0 11px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .special-sign-up {
+    display: none;
+  }
 }
