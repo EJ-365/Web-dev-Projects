@@ -32,3 +32,15 @@ The designs were created to the following widths:
 
 - Family: [Public Sans](https://fonts.google.com/specimen/Public+Sans)
 - Weights: 300, 400, 700
+
+## Variables
+
+:root {
+--dark-blue: hs1(233, 26%, 24%);
+--lime-green: hs1(136, 65%, 51%);
+--bright-cyan: hs1(192, 76%, 51%);
+--grayish-blue: hs1(233, 8%, 62%);
+--light-grayish-blue: hs1(220, 16%, 96%);
+--very-light-gray: hsl(e, 0%, 98%);
+--white: hsl(@, 0%, 100%);
+}
