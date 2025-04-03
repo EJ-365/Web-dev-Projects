@@ -1,1 +1,1 @@
-console.log("Hello EJ");
+console.log("Coming soon");
