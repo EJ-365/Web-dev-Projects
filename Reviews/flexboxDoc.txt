@@ -1,0 +1,125 @@
+lexbox CSS Documentation and Cheatsheet
+Overview
+The flexbox.css file provides a basic implementation of CSS Flexbox layout properties. This file demonstrates various Flexbox concepts including container properties, item properties, and basic styling.
+
+Container Properties
+Display and Direction
+.container {
+    display: flex;              /* Enables Flexbox layout */
+    flex-direction: row;        /* Items arranged horizontally (default) */
+    /* flex-direction: column;  /* Items arranged vertically */
+}
+
+Copy
+
+
+Wrapping
+.container {
+    /* flex-wrap: nowrap;       /* Default - items will not wrap */
+    /* flex-wrap: wrap;         /* Items will wrap to next line when needed */
+}
+
+Copy
+
+
+Alignment and Spacing
+.container {
+    /* justify-content: flex-start;      /* Align items at start (default) */
+    /* justify-content: flex-end;        /* Align items at end */
+    /* justify-content: center;          /* Center items horizontally */
+    /* justify-content: space-between;   /* Distribute items with space between */
+    /* justify-content: space-around;    /* Distribute items with space around */
+    /* justify-content: space-evenly;    /* Distribute items with equal space */
+    
+    /* align-items: stretch;             /* Stretch items to fill container (default) */
+    /* align-items: flex-start;          /* Align items at the start of cross axis */
+    /* align-items: flex-end;            /* Align items at the end of cross axis */
+    /* align-items: center;              /* Center items vertically */
+    /* align-items: baseline;            /* Align items by their text baseline */
+    
+    /* align-content: flex-start;        /* Pack lines at start */
+    /* align-content: flex-end;          /* Pack lines at end */
+    /* align-content: center;            /* Pack lines at center */
+    /* align-content: space-between;     /* Distribute lines with space between */
+    /* align-content: space-around;      /* Distribute lines with space around */
+    /* align-content: stretch;           /* Stretch lines to fill container (default) */
+}
+
+Copy
+
+
+Spacing Between Items
+.container {
+    /* column-gap: 20px;        /* Space between columns */
+    /* row-gap: 20px;           /* Space between rows */
+    /* gap: 20px;               /* Shorthand for row-gap and column-gap */
+}
+
+Copy
+
+
+Flex Item Properties
+Flex Grow
+Controls how much an item can grow relative to other flex items:
+
+.container .c {
+    flex-grow: 2;              /* Item grows twice as much as others */
+}
+
+.container .e {
+    flex-grow: 2;              /* Item grows twice as much as others */
+}
+
+Copy
+
+
+Order
+Controls the order in which items appear:
+
+.item {
+    /* order: 0;               /* Default order (0) */
+    /* order: 2;               /* Appears after items with lower order values */
+    /* order: -1;              /* Appears before items with higher order values */
+}
+
+Copy
+
+
+Other Item Properties (Not Used in Current Code)
+.item {
+    /* flex-shrink: 1;         /* How much item can shrink (default 1) */
+    /* flex-basis: auto;       /* Initial size of item before growing/shrinking */
+    /* flex: 1;                /* Shorthand for flex-grow, flex-shrink, flex-basis */
+    /* align-self: auto;       /* Override container's align-items for specific item */
+}
+
+Copy
+
+
+Basic Styling in Current Implementation
+Container has a green background (#3eff3e)
+Items have:
+Width of 40px
+4px margin
+Red background
+Centered text
+Usage Example
+This CSS can be used with HTML like:
+
+<div class="container">
+    <div class="item a">A</div>
+    <div class="item b">B</div>
+    <div class="item c">C</div>
+    <div class="item d">D</div>
+    <div class="item e">E</div>
+</div>
+
+Copy
+
+
+Notes
+Many properties are commented out in the original file, showing alternative options
+Items "c" and "e" are configured to grow twice as much as other items
+The current implementation uses row direction (horizontal layout)
+The file includes a CSS reset at the top to remove default margins and padding
+This cheatsheet covers the main Flexbox properties demonstrated in the provided CSS file, along with additional common Flexbox properties for reference.
