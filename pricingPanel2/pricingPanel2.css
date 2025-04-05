@@ -104,3 +104,12 @@ button:hover {
   background-color: #f9f2e3;
   border: 2px solid orange;
 }
+
+@media (max-width: 895px) {
+  .box {
+    margin-bottom: 35px;
+    body {
+      background-color: orange;
+    }
+  }
+}
