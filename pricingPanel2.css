@@ -113,7 +113,7 @@ button:hover {
 }
 
 @media (min-width: 1200px) {
-  .container{
+  .container {
     justify-content: space-evenly;
   }
 }
