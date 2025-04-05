@@ -103,13 +103,13 @@ button:hover {
 .smallTeam {
   background-color: #f9f2e3;
   border: 2px solid orange;
+  cursor: pointer;
 }
-
 @media (max-width: 895px) {
   .box {
     margin-bottom: 35px;
-    body {
-      background-color: orange;
-    }
+  }
+  body {
+    background-color: #fcf9f6;
   }
 }
