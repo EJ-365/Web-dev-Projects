@@ -9,26 +9,98 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  min-width: 100vw;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
-  background-color: blue;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-  border: 2px solid;
+  /* border: 2px solid; */
   margin: 0;
   padding: 0;
-  line-height: 75px;
   text-align: center;
 }
 
 .box {
-  background-color: green;
-  width: 100px;
-  height: 100px;
-  margin: 10px;
+  /* background-color: green; */
+  width: 300px;
+  height: auto;
+  padding: 0 20px;
+  /* margin: 10px; */
+  /* border-right: 1px solid orange; */
+
+  border-radius: 10px;
+}
+
+/* personal image svg */
+.personal-img {
+  width: 200px;
+  text-align: center;
+}
+
+/* Main content styling */
+h3 {
+  text-transform: uppercase;
+  margin: 30px;
+  font-weight: 500;
+  color: orange;
+}
+
+p {
+  text-transform: uppercase;
+  color: black;
+  margin: 0 15px;
   padding: 10px;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+}
+
+hr {
+  text-align: center;
+  margin: 4px;
+  box-sizing: border-box;
+  border: 1px solid orange;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 15px auto;
+  margin-bottom: 7px;
+  font-weight: bold;
+  color: darkorange;
+}
+
+button {
+  text-transform: uppercase;
+  padding: 15px;
+  margin: 10px;
+  background: none;
+  border: 1px solid orange;
+  border-radius: 10px;
+  width: 130px;
+  transition: background-color 0.5s linear;
+}
+
+/* button hovering */
+button:hover {
+  cursor: pointer;
+  background-color: orange;
+  color: white;
+}
+
+/* selected button */
+.active {
+  background-color: orange;
+  color: white;
+}
+
+.smallTeam {
+  background-color: #f9f2e3;
+  border: 2px solid orange;
 }
