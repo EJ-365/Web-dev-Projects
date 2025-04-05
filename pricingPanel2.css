@@ -113,9 +113,11 @@ button:hover {
 }
 
 @media (min-width: 1200px) {
-  .container {
-    display: flex;
-    justify-content: space-evenly;
-    align-content: space-evenly;
+
+  .body {
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: red;
   }
 }
