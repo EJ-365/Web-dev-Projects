@@ -113,11 +113,11 @@ button:hover {
 }
 
 @media (min-width: 1200px) {
-
-  .body {
+  .container {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    align-content: center;
-    background-color: red;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
