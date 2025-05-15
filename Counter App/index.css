@@ -31,7 +31,7 @@ img {
 /* wrapper container class div */
 .container{
     background-color:#ddada1;
-    max-width: 900px;
+    max-width: auto;
     padding: 0 20px;
     margin: 0 auto;    
     display: flex;
