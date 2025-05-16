@@ -20,10 +20,6 @@
 - `index.css` – Styling for the app
 - `index.js` – JavaScript logic for generating and resetting numbers
 
-## Screenshot
-
-![Screenshot](screenshot.jpg)
-
 ## License
 
 This project is for educational purposes.
