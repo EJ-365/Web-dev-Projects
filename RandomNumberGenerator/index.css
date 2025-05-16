@@ -1,0 +1,65 @@
+/* css reset start here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: inherit;
+  line-height: 1.5;
+}
+/* css reset ends here */
+
+.container {
+    background-color: #b4af9a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-width: 0 auto;
+    margin:0 auto;
+    height: 100vh;
+    text-align: center;
+}
+
+h1, .randomNum{
+    color:white;
+}
+
+.content{
+    background-color: green;
+    padding: 5rem;
+    border-radius: 30px;
+}
+
+.content > div{
+    margin:2rem
+}
+
+.content .randomNum{
+    font-size: 5rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 50px;
+}
+
+/* button styling */
+
+.button-div button {
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: orangered;
+    color:white;
+    cursor: pointer;
+    border:none
+}
+
+/* reset button 
+note: high css specificity wins 
+*/
+.button-div .reset {
+    background-color: gray;
+ }
