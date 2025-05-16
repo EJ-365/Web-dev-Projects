@@ -1,5 +1,12 @@
 {
   "spellright.language": ["en"],
   "spellright.documentTypes": ["markdown", "latex", "plaintext", "scss"],
-  "cSpell.words": ["Easybank", "Flexbox", "lightgreen", "nowrap", "Textcolor"]
+  "cSpell.words": [
+    "Easybank",
+    "Ejay",
+    "Flexbox",
+    "lightgreen",
+    "nowrap",
+    "Textcolor"
+  ]
 }
