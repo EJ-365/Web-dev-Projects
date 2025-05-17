@@ -17,7 +17,7 @@ const generateColor = function() {
 
 const copyColor = function() {
     hexCode.select();  // select/highlight the text inside the element
-    // hexCode.setSelectionRange(0,1000); // select the text starting from index 0 - 1000 (standard way of doing it )
+    // hexCode.setSelectionRange(0,1000); // select thnll.e text starting from index 0 - 1000 (standard way of doing it )
     navigator.clipboard.writeText(hexCode.value); // note it takes a param such as copy,bold,paste etc
     alert('Copied');
 };
