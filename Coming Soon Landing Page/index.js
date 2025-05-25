@@ -22,6 +22,7 @@ hoursEl.innerHTML = `${format(hours)}`;
 minutesEl.innerHTML = `${format(minutes)}`;
 secondsEl.innerHTML = `${ format(seconds)}`;
 
+// when the timer ends
 if(totalSeconds < 0) {
     clearInterval(countDown);
     h1.textContent = "Product Launch Begins";
@@ -35,5 +36,5 @@ if(totalSeconds < 0) {
     innerHTML
     */
     function format(count){
-        return count < 10 ? `0${count}` : count;
+        return count < 10 ? `0${count}` : count; // ternary operator
     }
