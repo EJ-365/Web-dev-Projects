@@ -5,20 +5,19 @@ const hoursEl = document.querySelector(".hours"),
 
 const clock = setInterval(() => {
   const now = new Date();
-  const getHours = now.getHours() % 12;
+  let getHours = now.getHours() % 12; 
+  if (getHours === 0) {
+    getHours = 12;
+  }
+  /* the concise way to change the 0 to 12 when it get to midnight
+   is now.getHours() % 12 || 12; */ 
   const getMinutes = now.getMinutes();
   const getSeconds = now.getSeconds();
 
   hoursEl.innerHTML = addZero(getHours);
   minutesEl.innerHTML = addZero(getMinutes);
   secondsEl.innerHTML = addZero(getSeconds);
-  ampmEl.innerHTML = getAMPM(getHours);
-
-  if (getHours >=0) {
-    return `PM`;
-  } else {
-    return `AM`;
-  }
+  ampmEl.innerHTML = getAMPM(now.getHours());
 });
 
 /* This function add zero 0 to minutes,hour,seconds whenever it's less than 10 to form
@@ -33,7 +32,7 @@ function addZero(zero) {
 
 /* function to change it to AM and PM */
 function getAMPM(hour) {
-  if (hour >= 0) {
+  if (hour >= 12) {
     return `pm`;
   } else {
     return `am`;
