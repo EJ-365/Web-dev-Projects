@@ -176,6 +176,7 @@ color:rgba(255, 255, 255, 0.568) !important;
 button {
     background: #023c5a !important;
     border:none !important;
+    text-transform: uppercase;
 }
 
 
