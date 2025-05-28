@@ -33,7 +33,7 @@ function addZero(zero) {
 
 /* function to change it to AM and PM */
 function getAMPM(hour) {
-  if (hour >= 12) {
+  if (hour >= 0) {
     return `pm`;
   } else {
     return `am`;
