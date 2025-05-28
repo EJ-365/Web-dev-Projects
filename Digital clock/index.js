@@ -11,6 +11,7 @@ const clock = setInterval(() => {
   }
   /* the concise way to change the 0 to 12 when it get to midnight
    is now.getHours() % 12 || 12; */ 
+   
   const getMinutes = now.getMinutes();
   const getSeconds = now.getSeconds();
 
