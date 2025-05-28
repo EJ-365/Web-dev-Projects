@@ -14,7 +14,7 @@ const clock = setInterval(() => {
   secondsEl.innerHTML = addZero(getSeconds);
   ampmEl.innerHTML = getAMPM(getHours);
 
-  if (getHours >= 12) {
+  if (getHours >=0) {
     return `PM`;
   } else {
     return `AM`;
