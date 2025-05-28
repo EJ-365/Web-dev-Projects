@@ -2,6 +2,7 @@
   "spellright.language": ["en"],
   "spellright.documentTypes": ["markdown", "latex", "plaintext", "scss"],
   "cSpell.words": [
+    "ampm",
     "Easybank",
     "Ejay",
     "Flexbox",

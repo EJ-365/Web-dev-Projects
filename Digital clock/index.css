@@ -136,6 +136,22 @@ body::after{
     padding: 0 10px;
 }
 
+.ampm-box{
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+    border: 1px solid white;
+    width: 120px;
+    text-align: center;
+    background-color: #00000096;
+    border-radius: 15px;
+}
+.ampm{
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color:orange
+}
 form {
     text-align: center;
     font-size: 15px;
@@ -199,6 +215,18 @@ button {
     margin: 5px 0;
     padding: auto;
    text-align: center;
+}
+
+.ampm-box{
+    margin: 0 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ampm{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: orange;
 }
 
 .content{
