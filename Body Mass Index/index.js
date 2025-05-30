@@ -1,4 +1,4 @@
-/*  BMI => kg/m^2 // formula
+/*  BMI => width (kg)/ height (m^2) // formula
  Normal => 18.5 - 24.9;
 underweight => <18.5
 overweight => 25-29.9
@@ -30,7 +30,25 @@ function validateInput(e) {
         return result.textContent = "Please Enter a valid weight!";
     }
     else {
-        // calculateBMI();
-    alert ("got it");
+        calculateBMI(height,weight); // argument to get the user input(value)
     }
+}
+
+// calculate BMI
+
+const calculateBMI = (height, weight) => {
+    // converting the height to meter; currently it's in Centimeter
+height = height / 100;
+let bmi = (weight / Math.pow(height,2)).toFixed(1); // hight raised to power 2 or height squared using Math.pow and set it to 2 decimal places
+console.log(bmi);
+
+// categorize the result
+if(bmi < 18.5) {
+    result.textContent = bmi;
+    // result.style.backgroundColor = 'yellow'
+    // result.style.color = "black"
+}
+
+// tbd
+
 }
