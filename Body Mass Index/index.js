@@ -20,7 +20,11 @@ form.addEventListener('submit', validateInput );
 function validateInput(e) {
     e.preventDefault();
     let height = heightInput.value; // variable name height and the variable element name for the input value called "heightInput and weightInput" declared at the top of the page
-    let weight = weightInput.value;
+    let weight = weightInput.value; // to hold the weight value input element 
+
+    // For displaying the reset button 
+reset.style.display = 'block';
+result.style.display ="block";
 
     if(height === "") {
         return result.textContent = "Please Enter a valid height!";
@@ -29,26 +33,61 @@ function validateInput(e) {
     else if (weight === "") {
         return result.textContent = "Please Enter a valid weight!";
     }
+    
     else {
-        calculateBMI(height,weight); // argument to get the user input(value)
+result.innerHTML = `
+<div class="loader-div">
+<img class="loader" src="Animation - 1748764638312.gif" alt="loading...">
+ </div>
+`;
+
+setTimeout(()=> {
+     calculateBMI(height,weight);// argument to get the user input(value)
+
+}, 1000) 
     }
+
 }
 
 // calculate BMI
 
 const calculateBMI = (height, weight) => {
-    // converting the height to meter; currently it's in Centimeter
+    // converting the height to meter by dividing by 100; currently it's in Centimeter
 height = height / 100;
 let bmi = (weight / Math.pow(height,2)).toFixed(1); // hight raised to power 2 or height squared using Math.pow and set it to 2 decimal places
 console.log(bmi);
 
 // categorize the result
 if(bmi < 18.5) {
-    result.textContent = bmi;
-    // result.style.backgroundColor = 'yellow'
-    // result.style.color = "black"
-}
-
-// tbd
+   showResult(`Underweight:😒 <span>${bmi}</span>`, 'gray');
 
 }
+
+else if(bmi >= 18.5 && bmi <= 24.9) {
+showResult(`Normal: 😍  <span>${bmi}</span>`, 'green')
+}
+
+else if (bmi >= 25.0 && bmi <= 29.9) {
+    showResult(`Overweight:😮  <span>${bmi}</span>`, 'orange')
+}
+
+else {
+    showResult(`Obese: 😱 <span>${bmi}</span>`, 'darkred') 
+}
+}
+
+// function that will show the result for us
+function showResult(val, color){
+result.style.backgroundColor = color
+return result.innerHTML = val;
+}
+
+
+// event listener for reset button
+reset.addEventListener('click', () => {
+    form.reset(); 
+    result.style.display = "none"; // hiding the result
+    reset.style.display ="none";
+})
+
+// form.reset() clears the form
