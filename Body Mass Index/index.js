@@ -5,7 +5,7 @@ overweight => 25-29.9
 Obese => >30 and above 
 */
 
-"use strict";
+"use strict"; // help us identity bug in case of an error 
 const btn = document.querySelector('.btn'),
 form = document.querySelector('form'),
  result = document.querySelector('.result'),
@@ -18,8 +18,8 @@ weightInput = document.getElementById('weight');
 form.addEventListener('submit', validateInput );
 
 function validateInput(e) {
-    e.preventDefault();
-    let height = heightInput.value; // variable name height and the variable element name for the input value called "heightInput and weightInput" declared at the top of the page
+    e.preventDefault(); // prevent the form from refreshing/reloading and submitting the file
+    let height = heightInput.value; // to hold the weight value input element 
     let weight = weightInput.value; // to hold the weight value input element 
 
     // For displaying the reset button 
@@ -27,11 +27,11 @@ reset.style.display = 'block';
 result.style.display ="block";
 
     if(height === "") {
-        return result.textContent = "Please Enter a valid height!";
+        return result.innerHTML = "Please Enter a valid height!";
     }
 
     else if (weight === "") {
-        return result.textContent = "Please Enter a valid weight!";
+        return result.innerHTML = "Please Enter a valid weight!";
     }
     
     else {

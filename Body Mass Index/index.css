@@ -35,7 +35,7 @@ img{
 
 .box{ /* modifier class for the container */
    width:40rem;
-   background: rgb(9, 70, 128);
+   background: #094680;
    padding:2rem;
    color:white;
 }
