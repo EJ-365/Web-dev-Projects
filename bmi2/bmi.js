@@ -54,7 +54,7 @@ function calculate(heightValue, weightValue) {
     // determine if underweight, overweight, normal or obese
 
      if (bmi <= 18.5) {
-       showResult(`Underweight ☹️: <span>${bmi}</span>`, 'gray');
+       showResult(`Underweight ☹️: <span>${bmi}</span>`, 'lightgray');
     }
 
     else if(bmi >= 18.5 && bmi <= 24.9){
@@ -72,7 +72,7 @@ function calculate(heightValue, weightValue) {
 }
 
 function showResult(value, color){
-    result.style.backgroundColor = color;
+    result.style.color = color;
     return result.innerHTML = value;
 }
 
