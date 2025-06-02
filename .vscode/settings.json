@@ -3,11 +3,14 @@
   "spellright.documentTypes": ["markdown", "latex", "plaintext", "scss"],
   "cSpell.words": [
     "ampm",
+    "darkred",
     "Easybank",
     "Ejay",
     "Flexbox",
+    "lightgray",
     "lightgreen",
     "nowrap",
+    "orangered",
     "Textcolor"
   ]
 }

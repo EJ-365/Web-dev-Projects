@@ -5,8 +5,9 @@ const hoursEl = document.querySelector(".hours"),
 
 const clock = setInterval(() => {
   const now = new Date();
-  let getHours = now.getHours() % 12; 
 
+
+  let getHours = now.getHours() % 12; // divide by 12 and get the value of the remainder
   if (getHours === 0) {
     getHours = 12;
   }
