@@ -6,6 +6,7 @@ const hoursEl = document.querySelector(".hours"),
 const clock = setInterval(() => {
   const now = new Date();
   let getHours = now.getHours() % 12; 
+
   if (getHours === 0) {
     getHours = 12;
   }
