@@ -35,3 +35,60 @@ img {
 }
 
 /* css reset ends */
+
+header{
+width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/netflix-backgroundImage.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+  position: relative;
+z-index: 0;
+}
+
+header::after{
+  content: "";
+  position: absolute;
+  top:0;
+  left: 0;
+  background-color:rgba(0,0,0,0.4);
+  width: 100%;
+  height: 100vh;
+}
+
+/* the button with language dropdown */
+.nav-item .languageSelect{
+  color:white;
+  background: none;
+   margin-left: auto;
+   padding:0 10px;
+   height: 30px;
+   width: 90px;
+   border-color:  rgba(244, 238, 238, 0.5);
+   border-radius: 5px;
+    font-weight: 500;
+    appearance: none;
+    position: relative;
+}
+
+
+
+/* sign-in button */
+.nav-item .sign-in-btn{
+  color:white;
+  background: red;
+   margin-left: auto;
+   padding:0 10px;
+   height: 30px;
+   width: 90px;
+   border: none;
+   border-radius: 5px;
+   font-weight: 500;
+}
+
+/* netflix logo image styling */
+.navbar-brand img{
+  display: block;
+  width: 12rem;
+}
