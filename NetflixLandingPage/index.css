@@ -143,6 +143,7 @@ line-height: 125%;
 margin-bottom:9px;
   }
 
+ /* form styling */
   form input{
     background: transparent !important;
     outline: none;
