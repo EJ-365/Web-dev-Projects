@@ -176,3 +176,95 @@ form label{
 
   }
 
+
+  /* Mobile and smaller screen size styling */
+  @media screen and (max-width: 768px) {
+    header {
+      height: 60vh;
+    }
+    
+    header::after {
+      height: 60vh;
+    }
+    
+    .navbar-brand img {
+      width: 8rem;
+      margin-top: 8px;
+    }
+    
+    .cta-main {
+      height: auto;
+      padding: 2rem 1rem;
+    }
+    
+    .content {
+      max-width: 100%;
+      padding: 0 1.5rem;
+    }
+    
+    .content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .content p {
+      font-size: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    form input {
+      font-size: 1rem;
+    }
+    
+    form button {
+      width: 100%;
+      height: 50px;
+      font-size: 20px;
+    }
+    
+    .nav-item .languageSelect {
+      height: 30px;
+      padding: 0 15px;
+      background-size: 8px 8px;
+    }
+    
+    .nav-item .sign-in-btn {
+      width: 100%;
+      height: 25px;
+      padding: 5px;
+      font-size: 0.9rem;
+    }
+
+    /* Add these new styles for navbar alignment */
+    .navbar-nav {
+        margin-right: 0 !important;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .nav-item {
+        display: flex;
+        justify-content: center;
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .nav-item .languageSelect {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .nav-item .sign-in-btn {
+        width: 100%;
+        max-width: 200px;
+        margin: 5px auto;
+    }
+
+    .navbar-brand {
+        margin-left: 20px !important;
+    }
+
+    /* Adjust collapsible menu background */
+    .navbar-collapse {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
