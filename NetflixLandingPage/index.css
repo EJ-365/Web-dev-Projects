@@ -269,3 +269,34 @@ form label{
       background-color: rgba(0, 0, 0, 0.8);
     }
   }
+
+  /* styling the curve container div */
+.curve-container {
+        box-sizing: border-box;
+        position: relative;
+        height: 100px;
+        width: 100%;
+        top: 0;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        border: solid .25rem transparent;
+        border-top-left-radius: 50% 100%;
+        border-top-right-radius: 50% 100%;
+        border-bottom: none;
+        background: radial-gradient(50% 500% at 50% -420%, #4061e766 80%, #0000001a 100%), black;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+    }
+.curve-container:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin-top: -.25rem;
+        border-radius:inherit;
+        background: linear-gradient(to right, #210d16 16%, #6b060b, #E50914, #470e27, #210d16 84%);
+    }
