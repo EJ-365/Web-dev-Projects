@@ -36,23 +36,24 @@ img {
 
 /* css reset ends */
 
-header{
-width: 100%;
+header {
+  width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/netflix-backgroundImage.jpg');
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/netflix-backgroundImage.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
-z-index: 0;
+  z-index: 0;
 }
 
-header::after{
+header::after {
   content: "";
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
-  background-color:rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100vh;
   z-index: 1;
@@ -61,15 +62,15 @@ header::after{
 /* the button with language dropdown */
 .nav-item .languageSelect {
   color: white;
-  background:transparent;
-  padding: 0 30px 0 10px;  /* extra right padding for the icon */
+  background: transparent;
+  padding: 0 30px 0 10px; /* extra right padding for the icon */
   height: 35px;
-  width: auto;  /* increased width to accommodate the icon */
+  width: auto; /* increased width to accommodate the icon */
   border: 1px solid #f4eeee80;
   border-radius: 5px;
   font-weight: 500;
   appearance: none;
-  background-image: url('images/dropdown-select-arrow.png');
+  background-image: url("images/dropdown-select-arrow.png");
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 10px 10px;
@@ -81,23 +82,22 @@ select option {
   color: black;
 }
 
-
 /* sign-in button */
-.nav-item .sign-in-btn{
-  color:white;
-  background: #E50914;
-   margin-left: auto;
-   padding:10px 10px;
-   height: 30px;
-   width: 80px;
-   border: none;
-   border-radius: 5px;
-   font-weight: 500;
-   line-height: 0;
+.nav-item .sign-in-btn {
+  color: white;
+  background: #e50914;
+  margin-left: auto;
+  padding: 10px 10px;
+  height: 30px;
+  width: 80px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  line-height: 0;
 }
 
 /* netflix logo image styling */
-.navbar-brand img{
+.navbar-brand img {
   display: block;
   width: 11.5rem;
   margin-top: 12px;
@@ -114,189 +114,358 @@ select option {
   z-index: 0;
   margin: 0;
   padding: 0;
-  color:white;
-  text-align:center;
+  color: white;
+  text-align: center;
 }
 
 .content {
-   margin: auto;
-    padding:auto;
-    max-width:900px !important;
+  margin: auto;
+  padding: auto;
+  max-width: 900px !important;
 }
 
 .content h1 {
   font-size: 3.5rem;
-font-weight: 700;
-line-height: 125%;
-  }
-
-  .content p{
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin:2rem 0;
-   font-weight: bold; 
-  }
-
-
-  .content h3{
-    font-size: 15px;
-margin-bottom:9px;
-  }
-
- /* form styling */
-  form input{
-    background: transparent !important;
-    outline: none;
-    appearance: none;
-    border-color: gray !important;
-    border-radius: 3px !important;
-    width: 100% !important;
-    color:white !important;
-  
-  }
-
-
-form label{
-  color:rgba(255, 255, 255, 0.5) !important;
+  font-weight: 700;
+  line-height: 125%;
 }
 
-  form button{
-    max-width: auto;
-    padding:10px;
-    margin:10px;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    background-color: #E50914;
-    color:white;
-    font-size: 23.6px;
-    font-weight: 700;
+.content p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+.content h3 {
+  font-size: 15px;
+  margin-bottom: 9px;
+}
+
+/* form styling */
+form input {
+  background: transparent !important;
+  outline: none;
+  appearance: none;
+  border-color: gray !important;
+  border-radius: 3px !important;
+  width: 100% !important;
+  color: white !important;
+}
+
+form label {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+form button {
+  max-width: auto;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #e50914;
+  color: white;
+  font-size: 23.6px;
+  font-weight: 700;
   text-align: center !important;
   width: 200px;
-  height:60px;
+  height: 60px;
+}
 
+/* Mobile and smaller screen size styling */
+@media screen and (max-width: 768px) {
+  header {
+    height: 60vh;
   }
 
+  header::after {
+    height: 60vh;
+  }
 
-  /* Mobile and smaller screen size styling */
-  @media screen and (max-width: 768px) {
-    header {
-      height: 60vh;
+  .navbar-brand img {
+    width: 8rem;
+    margin-top: 8px;
+  }
+
+  .cta-main {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .content {
+    max-width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  form input {
+    font-size: 1rem;
+  }
+
+  form button {
+    display: block;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .nav-item .languageSelect {
+    height: 30px;
+    padding: 0 15px;
+    background-size: 8px 8px;
+  }
+
+  .nav-item .sign-in-btn {
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+
+  /* Add these new styles for navbar alignment */
+  .navbar-nav {
+    margin-right: 0 !important;
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+    width: 100%;
+  }
+
+  .nav-item .languageSelect {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .nav-item .sign-in-btn {
+    width: 100%;
+    max-width: 200px;
+    margin: 5px auto;
+  }
+
+  .navbar-brand {
+    margin-left: 20px !important;
+  }
+
+  /* Adjust collapsible menu background */
+  .navbar-collapse {
+    background-color: none;
+  }
+}
+
+/* media query to adjust the button to stay in block level  */
+@media screen and (max-width: 768px) {
+
+    .d-flex.align-items-center {
+        flex-direction: column;
+        width: 100%;
     }
-    
-    header::after {
-      height: 60vh;
+
+    .form-floating {
+        width: 100% !important;
+        margin-bottom: 1rem !important;
     }
-    
-    .navbar-brand img {
-      width: 8rem;
-      margin-top: 8px;
-    }
-    
-    .cta-main {
-      height: auto;
-      padding: 2rem 1rem;
-    }
-    
-    .content {
-      max-width: 100%;
-      padding: 0 1.5rem;
-    }
-    
-    .content h1 {
-      font-size: 2.5rem;
-    }
-    
-    .content p {
-      font-size: 1rem;
-      margin: 1.5rem 0;
-    }
-    
-    form input {
-      font-size: 1rem;
-    }
-    
+
     form button {
-      width: 100%;
-      height: 50px;
-      font-size: 20px;
-    }
-    
-    .nav-item .languageSelect {
-      height: 30px;
-      padding: 0 15px;
-      background-size: 8px 8px;
-    }
-    
-    .nav-item .sign-in-btn {
-      width: 100%;
-      height: 25px;
-      padding: 5px;
-      font-size: 0.9rem;
-    }
-
-    /* Add these new styles for navbar alignment */
-    .navbar-nav {
-        margin-right: 0 !important;
-        width: 100%;
-        padding: 10px 20px;
-    }
-
-    .nav-item {
-        display: flex;
-        justify-content: center;
-        margin: 5px 0;
-        width: 100%;
-    }
-
-    .nav-item .languageSelect {
+        display: block;
         width: 100%;
         max-width: 200px;
+        height: 50px;
+        font-size: 20px;
+        margin: 0 auto;  /* Center the button */
     }
 
-    .nav-item .sign-in-btn {
-        width: 100%;
-        max-width: 200px;
-        margin: 5px auto;
+    form input {
+        width: 100% !important;
     }
+}
 
-    .navbar-brand {
-        margin-left: 20px !important;
-    }
-
-    /* Adjust collapsible menu background */
-    .navbar-collapse {
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-  }
-
-  /* styling the curve container div */
+/* styling the curve container div */
 .curve-container {
-        box-sizing: border-box;
-        position: relative;
-        height: 100px;
-        width: 100%;
-        top: 0;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        border: solid .25rem transparent;
-        border-top-left-radius: 50% 100%;
-        border-top-right-radius: 50% 100%;
-        border-bottom: none;
-        background: radial-gradient(50% 500% at 50% -420%, #4061e766 80%, #0000001a 100%), black;
-        -webkit-background-clip: padding-box;
-        background-clip: padding-box;
-    }
+  box-sizing: border-box;
+  position: relative;
+  height: 100px;
+  width: 100%;
+  top: 0;
+  margin-bottom: 10rem;
+  margin-top: 7rem !important;
+  display: flex;
+  align-items: center;
+  border: solid 0.25rem transparent;
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  border-bottom: none;
+  background: radial-gradient(
+      50% 500% at 50% -420%,
+      #4061e766 80%,
+      #0000001a 100%
+    ),
+    black;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
 .curve-container:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        margin-top: -.25rem;
-        border-radius:inherit;
-        background: linear-gradient(to right, #210d16 16%, #6b060b, #E50914, #470e27, #210d16 84%);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin-top: -0.25rem;
+  border-radius: inherit;
+  background: linear-gradient(
+    to right,
+    #210d16 16%,
+    #6b060b,
+    #e50914,
+    #470e27,
+    #210d16 84%
+  );
+}
+
+@media screen and (max-width: 780px) {
+  .curve-container {
+    margin-top: 55px;
+    max-width: 100%;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .curve-container {
+    display: none;
+  }
+}
+
+/* styling for the popcorn container */
+.popcorn-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-left: 50px;
+  padding: 0;
+}
+
+.popcorn-container .popcorn-content {
+  max-width: 100%;
+  width: 900px;
+  height: 80px;
+  display: flex;
+  background: linear-gradient(to right, #261734, #241735, #18193c, #15193e);
+  color:white;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  padding: 20px;
+ margin: 57px 0;
+  border-radius: 15px;
+}
+
+
+.popcorn-content button {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-left: 350px;
+   background: #80808066;
+   height: 40px;
+   border-radius: 4px;
+   color:white;
+}
+
+.popcorn-content h4 {
+  text-align: start;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.popcorn-svg img {
+  width: 65px;
+  height: auto;
+  position: absolute;
+  left:70px;
+  top:65px;
+  margin-right: 0px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .popcorn-container {
+        margin-bottom: 80px;
+        padding: 0 15px;
+        position: relative;
+        z-index: 1;
     }
+
+    .popcorn-container .popcorn-content {
+        width: 100%;
+        height: auto !important;
+        min-height: 150px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 15px;
+        margin: 40px 0;
+    }
+
+    .popcorn-content .text-content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+        margin-bottom: 15px;
+    }
+
+    .popcorn-content h4 {
+        text-align: left;
+        font-size: 18px;
+        margin: 12px 0;
+    }
+
+    .popcorn-content p {
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .popcorn-content button {
+        margin: 15px 0 0 0;
+        width: auto;
+        align-self: flex-start;
+    }
+
+    .popcorn-svg {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .popcorn-svg img {
+        position: absolute;
+        width: 65px;
+        left: 15px;
+        top: 0px;
+        transform: none;
+    }
+}
+
+@media screen and (max-width:500px){
+  .curve-container {
+      margin-top:12rem;
+  }
+  
+}
+
