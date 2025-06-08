@@ -417,69 +417,71 @@ form button {
 }
 
 
-
 @media screen and (max-width: 768px) {
-    .popcorn-container {
-        margin-bottom: 80px;
-        padding: 0 15px;
-        position: relative;
-        z-index: 1;
-    }
+  .popcorn-container {
+    margin-bottom: 80px;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+  }
 
-    .popcorn-container .popcorn-content {
-        width: 100%;
-        height: auto !important;
-        min-height: 150px;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        padding: 20px 15px;
-        margin: 40px 0;
-    }
+  .popcorn-container .popcorn-content {
+    width: 100%;
+    height: auto !important;
+    min-height: 150px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+    margin: 40px 0;
+  }
 
-    .popcorn-content .text-content {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 20px;
-        margin-bottom: 15px;
-    }
+  .popcorn-content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: auto;
+    width: auto;
+  }
 
-    .popcorn-content h4 {
-        text-align: left;
-        font-size: 18px;
-        margin: 12px 0;
-    }
+  .popcorn-content h4 {
+    text-align: left;
+    font-size: 18px;
+    margin: 12px 0;
+  }
 
-    .popcorn-content p {
-        text-align: left;
-        font-size: 14px;
-    }
+  .popcorn-content p {
+    text-align: left;
+    font-size: 14px;
+  }
 
-    .popcorn-content button {
-        margin: 15px 0 0 0;
-        width: auto;
-        align-self: flex-start;
-    }
+  .popcorn-content button {
+    margin: 15px 0 0 0;
+    width: auto;
+    align-self: flex-start;
+  }
 
-    .popcorn-svg {
-        position: relative;
-        z-index: 2;
-    }
-    
-    .popcorn-svg img {
-        position: absolute;
-        width: 65px;
-        left: 15px;
-        top: 0px;
-        transform: none;
-    }
-}
-
-@media screen and (max-width:500px){
-  .curve-container {
-      margin-top:12rem;
+  .popcorn-svg {
+    position: relative;
+    z-index: 2;
   }
   
+  .popcorn-svg img {
+    position: absolute;
+    width: 65px;
+    left: 15px;
+    top: 0px;
+    transform: none;
+  }
 }
 
+/* New media query for screen sizes between 770px and 927px to ensure proper height and button alignment */
+@media screen and (min-width: 770px) and (max-width: 927px) {
+  .popcorn-content {
+    min-height: 150px;
+  }
+  .popcorn-content button {
+    margin-left: auto;
+  }
+}
