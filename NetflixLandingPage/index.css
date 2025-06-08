@@ -167,7 +167,7 @@ form input {
 
 /* Input Label - Email input label styling */
 form label {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: #ffffff80 !important;
 }
 
 /* CTA Button - Get Started button styling */
