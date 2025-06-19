@@ -1,13 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-size: 16px;
 }
 
 /* Body defaults - Sets black background */
 body {
   margin: 0;
-
+  box-sizing: border-box;
   line-height: 1.5;
 }
 
@@ -484,4 +484,15 @@ form button {
   .popcorn-content button {
     margin-left: auto;
   }
+}
+
+
+/* trending Now heading styling only */
+.trendingNow-heading {
+  margin:0 10%;
+  color:white;
+}
+
+.trendingNow-heading h2{
+   font-size: 23.5px;
 }
