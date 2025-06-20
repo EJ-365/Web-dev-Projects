@@ -528,3 +528,29 @@ form button {
   text-shadow:rgba(0, 0, 0, 0.7) 0px 0px 1.5rem;
   pointer-events: none;
 }
+
+/* fixing the top 10 numbers on a smaller screen sizes */
+@media screen and (max-width:590px) {
+  .card-img-container {
+    display: flex;
+    align-items: start;
+    width: 100px;
+    height: auto;
+    position: relative;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 46%;
+    left: 56%;
+    transform: translateY(0%);
+    color: #000000cf;
+    -webkit-text-stroke: 1px white;
+    font-family: sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 1.5rem;
+    pointer-events: none;
+    margin-left: 5px;
+  }
+}
