@@ -528,7 +528,12 @@ form button {
   text-shadow:rgba(0, 0, 0, 0.7) 0px 0px 1.5rem;
   pointer-events: none;
 }
+/* on hover */
 
+.card-img-container:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
+}
 /* fixing the top 10 numbers on a smaller screen sizes */
 @media screen and (max-width:590px) {
   .card-img-container {
