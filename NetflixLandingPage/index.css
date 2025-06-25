@@ -604,7 +604,7 @@ form button {
 /* Stack cards vertically on small screens */
 .mrj .row {
   display: flex;
-  gap: 24px; /* Adjust the value as needed for spacing */
+  gap: 15px; /* Adjust the value as needed for spacing */
   flex-wrap: wrap;
   justify-content: center;
 }
