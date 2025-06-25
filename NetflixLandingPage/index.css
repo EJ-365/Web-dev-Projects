@@ -282,29 +282,28 @@ form button {
 
 /* media query to adjust the button to stay in block level  */
 @media screen and (max-width: 768px) {
+  .d-flex.align-items-center {
+    flex-direction: column;
+    width: 100%;
+  }
 
-    .d-flex.align-items-center {
-        flex-direction: column;
-        width: 100%;
-    }
+  .form-floating {
+    width: 100% !important;
+    margin-bottom: 1rem !important;
+  }
 
-    .form-floating {
-        width: 100% !important;
-        margin-bottom: 1rem !important;
-    }
+  form button {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin: 0 auto; /* Center the button */
+  }
 
-    form button {
-        display: block;
-        width: 100%;
-        max-width: 200px;
-        height: 50px;
-        font-size: 20px;
-        margin: 0 auto;  /* Center the button */
-    }
-
-    form input {
-        width: 100% !important;
-    }
+  form input {
+    width: 100% !important;
+  }
 }
 
 /* Curve Divider - Creates Netflix-style curved section divider */
@@ -380,25 +379,24 @@ form button {
   height: 80px;
   display: flex;
   background: linear-gradient(to right, #261734, #241735, #18193c, #15193e);
-  color:white;
+  color: white;
   position: absolute;
   left: 150px;
   top: 0;
   padding: 20px;
- margin: 57px 0;
+  margin: 57px 0;
   border-radius: 15px;
 }
-
 
 .popcorn-content button {
   display: flex;
   justify-content: end;
   align-items: center;
   margin-left: 350px;
-   background: #80808066;
-   height: 40px;
-   border-radius: 4px;
-   color:white;
+  background: #80808066;
+  height: 40px;
+  border-radius: 4px;
+  color: white;
 }
 
 .popcorn-content h4 {
@@ -411,11 +409,10 @@ form button {
   width: 65px;
   height: auto;
   position: absolute;
-  left:70px;
-  top:65px;
+  left: 70px;
+  top: 65px;
   margin-right: 0px;
 }
-
 
 @media screen and (max-width: 768px) {
   .popcorn-container {
@@ -436,7 +433,7 @@ form button {
     margin: 40px 0;
   }
 
-  .popcorn-content{
+  .popcorn-content {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -466,7 +463,7 @@ form button {
     position: relative;
     z-index: 2;
   }
-  
+
   .popcorn-svg img {
     position: absolute;
     width: 65px;
@@ -486,46 +483,45 @@ form button {
   }
 }
 
-
 /* trending Now heading styling only */
 .trendingNow-heading {
-  margin:0 10%;
-  color:white;
+  margin: 0 10%;
+  color: white;
 }
 
-.trendingNow-heading h2{
-   font-size: 23.5px;
+.trendingNow-heading h2 {
+  font-size: 23.5px;
 }
 
 /* trending card ranking from top 10 styling  */
-.trendingCard .row{
+.trendingCard .row {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.card-img-container{
+.card-img-container {
   position: relative;
   display: inline-block;
 }
 
-.card-img-container img{
+.card-img-container img {
   display: block;
-  width:100%;
+  width: 100%;
   height: auto;
 }
 
-.overlay-text{
+.overlay-text {
   position: absolute;
-  top:46%;
-  left:56%;
+  top: 46%;
+  left: 56%;
   transform: translate(-175%);
-  color:#000000cf;
+  color: #000000cf;
   -webkit-text-stroke: 2px white;
   font-family: sans-serif;
   font-size: 6rem;
   font-weight: 700;
-  text-shadow:rgba(0, 0, 0, 0.7) 0px 0px 1.5rem;
+  text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 1.5rem;
   pointer-events: none;
 }
 /* on hover */
@@ -535,7 +531,7 @@ form button {
   transform: scale(1.1);
 }
 /* fixing the top 10 numbers on a smaller screen sizes */
-@media screen and (max-width:590px) {
+@media screen and (max-width: 590px) {
   .card-img-container {
     display: flex;
     align-items: start;
@@ -557,5 +553,75 @@ form button {
     text-shadow: rgba(0, 0, 0, 0.7) 0px 0px 1.5rem;
     pointer-events: none;
     margin-left: 5px;
+  }
+}
+
+/* 'More reason to join' styling begins here */
+.mrj > h2 {
+  /* More reason to join title */
+  font-size: 25px;
+  margin-left: 10px;
+}
+.mrj .card {
+  padding: auto;
+  position: relative;
+  height: auto;
+  width: 255px !important;
+  box-sizing: border-box;
+  color: lightgray;
+  border-radius: 18px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(25, 32, 67, 1),
+    rgba(25, 32, 67, 1),
+    rgba(33, 0, 0, 5)
+  );
+}
+
+/* The card title */
+
+.mrj .card-title {
+  font-size: 23px;
+  color: white;
+  margin: 10px;
+}
+
+.mrj img {
+  width: 60px;
+  height: auto;
+  margin-top: 20px !important;
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+}
+
+.mrj .card-body {
+  /* making the card body longer */
+  height: 310px;
+}
+
+/* Responsive layout for 'More Reason to Join' section */
+/* Stack cards vertically on small screens */
+.mrj .row {
+  display: flex;
+  gap: 24px; /* Adjust the value as needed for spacing */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mrj .card {
+  margin: 0; /* Remove default margin if any */
+}
+@media (max-width: 767px) {
+  .mrj .row {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .mrj .col,
+  .mrj .card {
+    width: 100% !important;
+    max-width: 350px;
+    margin: 0 auto;
   }
 }
