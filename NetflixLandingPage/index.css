@@ -9,6 +9,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   line-height: 1.5;
+font-family: "Helvetica Neue", "Segoe UI", Roboto, Arial, sans-serif !important;
 }
 
 /* Typography Reset - Removes default margins from headings */
@@ -624,4 +625,38 @@ form button {
     max-width: 350px;
     margin: 0 auto;
   }
+}
+
+
+
+/* Frequently Asked Questions Styling */
+.accordion {
+  max-width: 100%;
+  height: auto;
+}
+
+/* accordion on hover */
+.accordion:hover{
+  cursor: pointer;
+}
+.accordion .card{
+  background:#383838 ;
+}
+.accordion .card-header{
+  height: 90px;
+  padding: 30px;
+  
+}
+
+.accordion .card-header p {
+font-size: 24px;
+font-weight: 400;
+line-height: normal;
+}
+
+.accordion .card-body p {
+  font-size: 24px;
+font-weight: 400;
+line-height: normal;
+padding: 20px;
 }
