@@ -660,3 +660,9 @@ font-weight: 400;
 line-height: normal;
 padding: 20px;
 }
+
+.plus-icon, .times-icon{
+  font-size: 45px;
+  font-weight: 400;
+  line-height: normal;
+}
