@@ -667,14 +667,14 @@ padding: 20px;
   line-height: normal;
 }
 
-/* FAQ in smaller screen */
+/* FAQ width adjustment on larger screen*/
 @media screen and (min-width: 1200px) {
   .faq-container {
     width: 58rem;
   }
 }
 
-/* for smaller screen */
+
 /* Styling for accordion icons */
 .card-header {
     position: relative;
