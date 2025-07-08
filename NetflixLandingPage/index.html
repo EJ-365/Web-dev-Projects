@@ -315,35 +315,57 @@
     </div>
 </div>
 
+<!--accordion collapsing script-->
 <script>
     // Add JavaScript to toggle between + and × icons
-    document.addEventListener('DOMContentLoaded', function() {
-        const accordionItems = document.querySelectorAll('.collapse');
-        
-        accordionItems.forEach(item => {
-            item.addEventListener('show.bs.collapse', function() {
-                const cardHeader = this.previousElementSibling;
-                const plusIcon = cardHeader.querySelector('.plus-icon');
-                const timesIcon = cardHeader.querySelector('.times-icon');
-                
-                plusIcon.classList.add('d-none');
-                timesIcon.classList.remove('d-none');
-            });
-            
-            item.addEventListener('hide.bs.collapse', function() {
-                const cardHeader = this.previousElementSibling;
-                const plusIcon = cardHeader.querySelector('.plus-icon');
-                const timesIcon = cardHeader.querySelector('.times-icon');
-                
-                plusIcon.classList.remove('d-none');
-                timesIcon.classList.add('d-none');
-            });
+document.addEventListener('DOMContentLoaded', function() {
+    const accordionItems = document.querySelectorAll('.collapse');
+    
+    // Add click event to the icons
+    const accordionIcons = document.querySelectorAll('.accordion-icon');
+    
+    accordionIcons.forEach(icon => {
+        icon.style.cursor = 'pointer';
+        icon.addEventListener('click', function() {
+            // Find the parent card-header
+            const cardHeader = this.closest('.card-header');
+            // Get the target from the p element
+            const target = cardHeader.querySelector('p').getAttribute('data-bs-target');
+            // Get the collapse element
+            const collapseElement = document.querySelector(target);
+            // Toggle the collapse
+            const bsCollapse = bootstrap.Collapse.getInstance(collapseElement) || 
+                               new bootstrap.Collapse(collapseElement);
+            bsCollapse.toggle();
         });
     });
-</script>
+    
+    // Existing code for handling collapse events
+    accordionItems.forEach(item => {
+        item.addEventListener('show.bs.collapse', function() {
+            const cardHeader = this.previousElementSibling;
+            const plusIcon = cardHeader.querySelector('.plus-icon');
+            const timesIcon = cardHeader.querySelector('.times-icon');
+            
+            plusIcon.classList.add('d-none');
+            timesIcon.classList.remove('d-none');
+        });
+        
+        item.addEventListener('hide.bs.collapse', function() {
+            const cardHeader = this.previousElementSibling;
+            const plusIcon = cardHeader.querySelector('.plus-icon');
+            const timesIcon = cardHeader.querySelector('.times-icon');
+            
+            plusIcon.classList.remove('d-none');
+            timesIcon.classList.add('d-none');
+        });
+    });
+});
+
+    </script>
 
 
-<!-- Footer session-->
+<!-- Footer-->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

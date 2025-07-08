@@ -666,3 +666,38 @@ padding: 20px;
   font-weight: 400;
   line-height: normal;
 }
+
+/* FAQ in smaller screen */
+@media screen and (min-width: 1200px) {
+  .faq-container {
+    width: 58rem;
+  }
+}
+
+/* for smaller screen */
+/* Styling for accordion icons */
+.card-header {
+    position: relative;
+    cursor: pointer;
+}
+
+.card-header p {
+    padding-right: 30px; /* Make space for the icon */
+}
+
+.accordion-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .accordion-icon {
+        right: 15px;
+        font-size: 1.2rem;
+    }
+}
