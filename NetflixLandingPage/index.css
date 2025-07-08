@@ -760,9 +760,9 @@ align-content: center;
 
 
 /* Main footer styling */
-footer .phoneNum h6{
+.phoneNum h6{
   color:lightgray;
-  margin-left: 1.5%;
+  margin-left: 6.3%;
 }
 
 footer .col h6{
@@ -777,3 +777,54 @@ footer .col h6{
 footer:hover{
   cursor:pointer;
 }
+
+footer {
+  padding: 40px;
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Main footer media query on smalle screen */
+@media (max-width: 500px) {
+  .row.row-cols-4 {
+    display: block !important;
+  }
+  
+  .col {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .phoneNum, footer .container {
+    padding-left: 15px;
+  }
+
+  /* The last 'Get started button */
+
+  .getStarted button{
+    display: block;
+    text-align: center;
+  }
+}
+
+/* the last get started button by itself */
+ .getStarted button{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center !important;
+   max-width: 500%;
+   margin:auto;
+   width: 370px;
+   height: 40px;
+   padding: auto;
+    border-radius: 3px;
+  }
+
+  @media (min-width:600px) {
+     .getStarted button{
+    display: none;
+  }
+  }
