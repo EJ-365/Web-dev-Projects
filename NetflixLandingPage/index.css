@@ -640,7 +640,12 @@ form button {
   cursor: pointer;
 }
 .accordion .card{
-  background:#383838 ;
+  background:#383838;
+}
+
+/* when accordion card is on hover */
+.accordion .card:hover{
+  background:#9f9e9e6c;
 }
 .accordion .card-header{
   height: 90px;
