@@ -706,3 +706,74 @@ padding: 20px;
         font-size: 1.2rem;
     }
 }
+
+
+/* footer email sign up styling */
+.footer-container .form-floating{
+  margin-left: 10%;
+width:600px;
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+
+.footer-container form button {
+  font-size: 23px;
+  width: 210px;
+  height: 53px;
+  border-radius: 3px !important;
+  font-weight: bold;
+}
+
+.footer-container form label{
+  color:#d3d3d3ba !important;
+}
+
+/* footer container responsiveness on smaller screen */
+@media screen and (max-width:500px) {
+   .footer-container .form-floating{
+    display: flex;
+    align-items: start;
+    
+  }
+  .footer-container form button{
+    margin-right: 47%;
+    width:180px !important; 
+  }
+
+  .footer-container form label{
+ text-align: start !important;
+ margin:0 20px;
+}
+
+  .footer-container input{
+    max-width: 100% !important;
+    width:360px !important;
+  }
+  .footer-container h6{
+    text-align: start !important;
+    padding: auto;
+    margin-left: 20px;
+  }
+}
+
+
+/* Main footer styling */
+footer .phoneNum h6{
+  color:lightgray;
+  margin-left: 1.5%;
+}
+
+footer .col h6{
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+  margin-bottom: 9px;
+  color:lightgray
+}
+
+footer:hover{
+  cursor:pointer;
+}
