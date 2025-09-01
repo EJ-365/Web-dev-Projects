@@ -45,7 +45,7 @@ function updateClock() {
       moonSun.alt = "moon";
     } else {
       moonSun.src = "images/sun.png";
-      moonSun.src = "sun";
+      moonSun.alt = "sun";
     }
   
     document.querySelector(".date").textContent = currentDate;
