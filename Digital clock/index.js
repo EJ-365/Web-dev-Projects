@@ -1,8 +1,9 @@
 const hoursEl = document.querySelector(".hours"),
   minutesEl = document.querySelector(".minutes"),
   secondsEl = document.querySelector(".seconds"),
-  ampmEl = document.querySelector(".ampm");
-
+  ampmEl = document.querySelector(".ampm"),
+  dateEl = document.querySelector(".date");
+  
 const clock = setInterval(() => {
   const now = new Date();
 
@@ -41,3 +42,12 @@ function getAMPM(hour) {
     return `am`;
   }
 }
+
+// for date element
+function getDate() {
+  const now = new Date();
+  const today = now.toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric", year: "numeric" });
+  dateEl.textContent = today;
+}
+
+getDate(); 
