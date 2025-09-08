@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tip calculator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--tailwindcss link-->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="container mx-auto bg-slate-400 h-screen w-full relative text-black mb-96"
+  >
+    <!--section for Tip Calculator-->
+    <h2
+      class="text-center text-5xl font-serif top-0 mt-10 font-thin text-white mb-0"
+    >
+      Tip Calculator
+    </h2>
+
+    <div
+      class="w-11/12 tipCal-container mx-auto container m-0 relative border-2 border-black bg-slate-200 h-56 mt-36 md:w-1/2 flex md:items-center justify-center p-12 mb-20"
+    >
+      <label class="md:text-2xl font-bold px-3 py-3">Price:</label>
+      <div class="md:w-full">
+        <input
+          type="text"
+          class="w-11/12 p-2 border-2 border-black rounded-md block shadow-sm focus:ring-blue-200 md:font-medium md:text-2xl mt-1 md:w-full"
+          placeholder="$56"
+        />
+      </div>
+      <!--buttons-->
+      <div
+        class="flex md:flex justify-center items-center mt-4 absolute bottom-5 md:left-1/2 md:-translate-x-48"
+      >
+        <button
+          type="button"
+          class="px-3 py-3 md:w-60 md:px-2 md:py-2 bg-green-800 rounded font-bold text-white mr-20 hover:bg-green-700 hover:opacity-80 transition duration-200"
+        >
+          Calculate
+        </button>
+        <button
+          type="button"
+          class="px-3 py-3 md:w-32 md:px-2 md:py-2 bg-slate-600 rounded font-bold text-white hover:bg-slate-500 hover:opacity-80 transition duration-200"
+        >
+          Clear
+        </button>
+      </div>
+    </div>
+
+    <!-- tip result table-->
+    <div class="hidden text-black text-center mx-auto container md:flex justify-center items-center h-60 w-full p-5">
+      <table class="border-2 border-black bg-white w-96 p-32">
+        <thead class="bg-black text-center text-white">
+          <tr>
+            <th>Tip%</th>
+            <th> Tip Amount </th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody class="text-xl">
+          <tr class="border-2 border-black">
+            <td class="border-2 border-black">5%</td>
+            <td class="border-2 border-black">$2.50</td>
+            <td class="border-2 border-black">$52.50</td>
+          </tr>
+
+          <tr class="border-2 border-black">
+            <td class="border-2 border-black">10%</td>
+            <td class="border-2 border-black">$5.00</td>
+            <td class="border-2 border-black">$55.00</td>
+          </tr>
+
+          <tr class="border-2 border-black">
+            <td class="border-2 border-black">5%</td>
+            <td class="border-2 border-black">$2.50</td>
+            <td class="border-2 border-black">$52.50</td>
+          </tr>
+
+          <tr class="border-2 border-black">
+            <td class="border-2 border-black">10%</td>
+            <td class="border-2 border-black">$5.00</td>
+            <td class="border-2 border-black">$55.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!--Shared Bill Tip Calculator-->
+
+    <h2
+      class="text-center text-5xl font-serif top-0 mt-28 font-thin text-white"
+    >
+      Shared Bill Tip
+    </h2>
+
+    <div
+      class="w-11/12 sharedBill-container mx-auto container relative border-2 border-black bg-slate-200 h-auto mt-36 md:w-1/2 flex flex-col md:items-center justify-center p-12 mb-32"
+    >
+      <div class="flex items-center mb-4">
+        <label for="price" class="md:text-xl font-bold px-3 py-3">Price:</label>
+        <div class="md:w-full">
+          <input
+            type="text"
+            id="price"
+            class="w-11/12 p-2 border-2 border-black rounded-md block shadow-sm focus:ring-blue-200 md:font-medium md:text-2xl mt-1 md:w-full"
+            placeholder="$55"
+          />
+        </div>
+      </div>
+
+      <div class="flex items-center mb-4">
+        <label for="tip" class="md:text-xl font-bold px-3 py-3">Tip%:</label>
+        <div class="md:w-full">
+          <input
+            type="text"
+            id="tip"
+            class="w-11/12 p-2 border-2 border-black rounded-md block shadow-sm focus:ring-blue-200 md:font-medium md:text-2xl mt-1 md:w-full"
+            placeholder="15%"
+          />
+        </div>
+      </div>
+
+      <div class="flex items-center mb-4">
+        <label for="people" class="md:text-xl font-bold px-3 py-3">Number of People:</label>
+        <div class="md:w-full">
+          <input
+            type="text"
+            id="people"
+            class="w-11/12 p-2 border-2 border-black rounded-md block shadow-sm focus:ring-blue-200 md:font-medium md:text-2xl mt-1 md:w-full"
+            placeholder="2"
+          />
+        </div>
+      </div>
+      
+      <!--buttons-->
+      <div
+        class="flex md:flex justify-center items-center mt-4"
+      >
+        <button
+          type="button"
+          class="px-3 py-3 md:w-60 md:px-2 md:py-2 bg-green-800 rounded font-bold text-white mr-20 hover:bg-green-700 hover:opacity-80 transition duration-200"
+        >
+          Calculate
+        </button>
+        <button
+          type="button"
+          class="px-3 py-3 md:w-32 md:px-2 md:py-2 bg-slate-600 rounded font-bold text-white hover:bg-slate-500 hover:opacity-80 transition duration-200"
+        >
+          Clear
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
