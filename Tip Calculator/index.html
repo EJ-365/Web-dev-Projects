@@ -34,13 +34,13 @@
         class="flex flex-col md:flex-row justify-center items-center mt-4 md:absolute md:bottom-5 md:left-1/2 md:-translate-x-48"
       >
         <button
-          type="button"
-          class=" tipCalculate px-3 py-3 md:w-60 md:px-2 md:py-2 bg-green-800 rounded font-bold text-white mb-2 md:mb-0 md:mr-20 hover:bg-green-700 hover:opacity-80 transition duration-200"
+          type="button" onclick="main();"
+          class="tipCalculate px-3 py-3 md:w-60 md:px-2 md:py-2 bg-green-800 rounded font-bold text-white mb-2 md:mb-0 md:mr-20 hover:bg-green-700 hover:opacity-80 transition duration-200"
         >
           Calculate
         </button>
         <button
-          type="button"
+          type="button" onclick="clearTipCalc();"
           class="tipClear px-3 py-3 md:w-32 md:px-2 md:py-2 bg-slate-600 rounded font-bold text-white hover:bg-slate-500 hover:opacity-80 transition duration-200"
         >
           Clear
@@ -50,17 +50,17 @@
 
     <!-- tip result table-->
     <div
-      class="hidden text-black text-center mx-auto container md:flex justify-center items-center h-60 w-full p-5"
+      class="text-black text-center mx-auto container md:flex justify-center items-center h-full w-full p-5"
     >
-      <table class="border-2 border-black bg-white w-96 p-32">
-        <thead class="bg-black text-center text-white">
+      <table class="border-2 border-black bg-white w-1/2 p-32">
+        <thead class="bg-black text-center text-white md:text-xl">
           <tr>
             <th>Tip%</th>
             <th>Tip Amount</th>
             <th>Total</th>
           </tr>
         </thead>
-        <tbody class="text-xl">
+        <tbody class="md:text-2xl">
           <tr class="border-2 border-black">
             <td class="tipPercent border-2 border-black">5%</td>
             <td class="tipAmount border-2 border-black">$2.50</td>
@@ -74,9 +74,9 @@
           </tr>
 
           <tr class="border-2 border-black">
-            <td class="tipPercent border-2 border-black">5%</td>
-            <td class="tipAmount border-2 border-black">$2.50</td>
-            <td class="tipTotal border-2 border-black">$52.50</td>
+            <td class="tipPercent border-2 border-black special">15%</td>
+            <td class="tipAmount border-2 border-black specialAmount">$2.50</td>
+            <td class="tipTotal border-2 border-black specialTotal">$52.50</td>
           </tr>
 
           <tr class="border-2 border-black">
@@ -84,7 +84,45 @@
             <td class="tipAmount border-2 border-black">$5.00</td>
             <td class="tipTotal border-2 border-black">$55.00</td>
           </tr>
-        </tbody>
+
+          <tr class="border-2 border-black">
+            <td class="tipPercent border-2 border-black">10%</td>
+            <td class="tipAmount border-2 border-black">$5.00</td>
+            <td class="tipTotal border-2 border-black">$55.00</td>
+          </tr>
+
+          <tr class="border-2 border-black">
+            <td class="tipPercent border-2 border-black">10%</td>
+            <td class="tipAmount border-2 border-black">$5.00</td>
+            <td class="tipTotal border-2 border-black">$55.00</td>
+          </tr>
+
+
+          <tr class="border-2 border-black">
+            <td class="tipPercent border-2 border-black">10%</td>
+            <td class="tipAmount border-2 border-black">$5.00</td>
+            <td class="tipTotal border-2 border-black">$55.00</td>
+          </tr>
+
+          <tr class="border-2 border-black">
+            <td class="tipPercent border-2 border-black">10%</td>
+            <td class="tipAmount border-2 border-black">$5.00</td>
+            <td class="tipTotal border-2 border-black">$55.00</td>
+          </tr>
+
+          <tr class="border-2 border-black">
+            <td class="tipPercent border-2 border-black">10%</td>
+            <td class="tipAmount border-2 border-black">$5.00</td>
+            <td class="tipTotal border-2 border-black">$55.00</td>
+          </tr>
+
+          
+          <tr class="border-2 border-black">
+            <td class="tipPercent border-2 border-black">10%</td>
+            <td class="tipAmount border-2 border-black">$5.00</td>
+            <td class="tipTotal border-2 border-black">$55.00</td>
+          </tr>
+        </tbody> 
       </table>
     </div>
 
