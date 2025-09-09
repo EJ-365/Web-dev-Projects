@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--sb  means == shared bill it's a class name-->
 <html lang="en">
   <head>
     <title>Tip calculator</title>
@@ -8,39 +9,39 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body
-    class="container mx-auto bg-slate-400 h-screen w-full relative text-black mb-96"
+    class="container mx-auto bg-slate-500 w-full relative text-black"
   >
     <!--section for Tip Calculator-->
     <h2
-      class="text-center text-5xl font-serif top-0 mt-10 font-thin text-white mb-0"
+      class="text-center text-3xl sm:text-4xl md:text-5xl font-serif top-0 mt-10 font-thin text-white mb-0"
     >
       Tip Calculator
     </h2>
 
     <div
-      class="w-11/12 tipCal-container mx-auto container m-0 relative border-2 border-black bg-slate-200 h-56 mt-36 md:w-1/2 flex md:items-center justify-center p-12 mb-20"
+      class="w-11/12 tipCal-container mx-auto container m-0 relative border-2 border-black bg-slate-200 h-auto md:h-56 mt-36 md:w-1/2 flex flex-col md:flex-row md:items-center justify-center p-6 md:p-12 mb-20"
     >
       <label class="md:text-2xl font-bold px-3 py-3">Price:</label>
       <div class="md:w-full">
         <input
           type="text"
-          class="w-11/12 p-2 border-2 border-black rounded-md block shadow-sm focus:ring-blue-200 md:font-medium md:text-2xl mt-1 md:w-full"
+          class="tipPriceValue w-11/12 p-2 border-2 border-black rounded-md block shadow-sm focus:ring-blue-200 md:font-medium md:text-2xl mt-1 md:w-full"
           placeholder="$56"
         />
       </div>
       <!--buttons-->
       <div
-        class="flex md:flex justify-center items-center mt-4 absolute bottom-5 md:left-1/2 md:-translate-x-48"
+        class="flex flex-col md:flex-row justify-center items-center mt-4 md:absolute md:bottom-5 md:left-1/2 md:-translate-x-48"
       >
         <button
           type="button"
-          class="px-3 py-3 md:w-60 md:px-2 md:py-2 bg-green-800 rounded font-bold text-white mr-20 hover:bg-green-700 hover:opacity-80 transition duration-200"
+          class=" tipCalculate px-3 py-3 md:w-60 md:px-2 md:py-2 bg-green-800 rounded font-bold text-white mb-2 md:mb-0 md:mr-20 hover:bg-green-700 hover:opacity-80 transition duration-200"
         >
           Calculate
         </button>
         <button
           type="button"
-          class="px-3 py-3 md:w-32 md:px-2 md:py-2 bg-slate-600 rounded font-bold text-white hover:bg-slate-500 hover:opacity-80 transition duration-200"
+          class="tipClear px-3 py-3 md:w-32 md:px-2 md:py-2 bg-slate-600 rounded font-bold text-white hover:bg-slate-500 hover:opacity-80 transition duration-200"
         >
           Clear
         </button>
@@ -61,27 +62,27 @@
         </thead>
         <tbody class="text-xl">
           <tr class="border-2 border-black">
-            <td class="border-2 border-black">5%</td>
-            <td class="border-2 border-black">$2.50</td>
-            <td class="border-2 border-black">$52.50</td>
+            <td class="tipPercent border-2 border-black">5%</td>
+            <td class="tipAmount border-2 border-black">$2.50</td>
+            <td class="tipTotal border-2 border-black">$52.50</td>
           </tr>
 
           <tr class="border-2 border-black">
-            <td class="border-2 border-black">10%</td>
-            <td class="border-2 border-black">$5.00</td>
-            <td class="border-2 border-black">$55.00</td>
+            <td class="tipPercent border-2 border-black">10%</td>
+            <td class="tipAmount border-2 border-black">$5.00</td>
+            <td class="tipTotal border-2 border-black">$55.00</td>
           </tr>
 
           <tr class="border-2 border-black">
-            <td class="border-2 border-black">5%</td>
-            <td class="border-2 border-black">$2.50</td>
-            <td class="border-2 border-black">$52.50</td>
+            <td class="tipPercent border-2 border-black">5%</td>
+            <td class="tipAmount border-2 border-black">$2.50</td>
+            <td class="tipTotal border-2 border-black">$52.50</td>
           </tr>
 
           <tr class="border-2 border-black">
-            <td class="border-2 border-black">10%</td>
-            <td class="border-2 border-black">$5.00</td>
-            <td class="border-2 border-black">$55.00</td>
+            <td class="tipPercent border-2 border-black">10%</td>
+            <td class="tipAmount border-2 border-black">$5.00</td>
+            <td class="tipTotal border-2 border-black">$55.00</td>
           </tr>
         </tbody>
       </table>
@@ -90,13 +91,13 @@
     <!--Shared Bill Tip Calculator-->
 
     <h2
-      class="text-center text-5xl font-serif top-0 mt-28 font-thin text-white"
+      class="text-center text-3xl sm:text-4xl md:text-5xl font-serif top-0 mt-28 font-thin text-white"
     >
       Shared Bill Tip
     </h2>
 
     <div
-      class="w-11/12 sharedBill-container mx-auto container relative border-2 border-black bg-slate-200 h-auto mt-36 md:w-1/2 flex flex-col md:items-center justify-center p-12 mb-32"
+      class="w-11/12 sharedBill-container mx-auto container relative border-2 border-black bg-slate-200 h-auto mt-36 md:w-1/2 flex flex-col md:items-center justify-center p-6 md:p-12 mb-32"
     >
       <div class="flex items-center mb-4">
         <label for="price" class="md:text-xl font-bold px-3 py-3">Price:</label>
@@ -104,19 +105,19 @@
           <input
             type="text"
             id="price"
-            class="w-11/12 p-2 border-2 border-black rounded-md block shadow-sm focus:ring-blue-200 md:font-medium md:text-2xl mt-1 md:w-full"
+            class="sharedBillInputPrice w-11/12 p-2 border-2 border-black rounded-md block shadow-sm focus:ring-blue-200 md:font-medium md:text-2xl mt-1 md:w-full"
             placeholder="$55"
           />
         </div>
       </div>
 
       <div class="flex items-center mb-4">
-        <label for="tip" class="md:text-xl font-bold px-3 py-3">Tip%:</label>
+        <label for="tip" class=" md:text-xl font-bold px-3 py-3">Tip%:</label>
         <div class="md:w-full">
           <input
             type="text"
             id="tip"
-            class="w-11/12 p-2 border-2 border-black rounded-md block shadow-sm focus:ring-blue-200 md:font-medium md:text-2xl mt-1 md:w-full"
+            class="sharedBillTipPercentInput w-11/12 p-2 border-2 border-black rounded-md block shadow-sm focus:ring-blue-200 md:font-medium md:text-2xl mt-1 md:w-full"
             placeholder="15%"
           />
         </div>
@@ -130,23 +131,23 @@
           <input
             type="text"
             id="people"
-            class="w-11/12 p-2 border-2 border-black rounded-md block shadow-sm focus:ring-blue-200 md:font-medium md:text-2xl mt-1 md:w-full"
+            class="sharedBillNumOfPeopleInput w-11/12 p-2 border-2 border-black rounded-md block shadow-sm focus:ring-blue-200 md:font-medium md:text-2xl mt-1 md:w-full"
             placeholder="2"
           />
         </div>
       </div>
 
       <!--buttons-->
-      <div class="flex md:flex justify-center items-center mt-4">
+      <div class="flex flex-col md:flex-row justify-center items-center mt-4">
         <button
           type="button"
-          class="px-3 py-3 md:w-60 md:px-2 md:py-2 bg-green-800 rounded font-bold text-white mr-20 hover:bg-green-700 hover:opacity-80 transition duration-200"
+          class=" sharedCalculateBtn px-3 py-3 md:w-60 md:px-2 md:py-2 bg-green-800 rounded font-bold text-white mb-2 md:mb-0 md:mr-20 hover:bg-green-700 hover:opacity-80 transition duration-200"
         >
           Calculate
         </button>
         <button
           type="button"
-          class="px-3 py-3 md:w-32 md:px-2 md:py-2 bg-slate-600 rounded font-bold text-white hover:bg-slate-500 hover:opacity-80 transition duration-200"
+          class="sharedBillClearBtn px-3 py-3 md:w-32 md:px-2 md:py-2 bg-slate-600 rounded font-bold text-white hover:bg-slate-500 hover:opacity-80 transition duration-200"
         >
           Clear
         </button>
@@ -155,10 +156,34 @@
 
     <!--result for share bill calculator-->
     <div
-      class="md:flex items-center justify-between mt-44 w-1/2 h-60 bg-whit mx-auto container"
-    >
-      <p>Tip:</p>
-      <p>Tip:</p>
+      class="sm:hidden md:flex md:flex-col items-center justify-between mt-10 md:w-1/2 h-auto bg-white mx-auto container border-4 border-black
+      px-6 sm:px-12 md:px-36 text-lg sm:text-xl md:text-2xl py-20 mb-96">
+
+      <div class="flex items-center justify-between w-full mb-4"> 
+        <!-- overall tip amount-->
+      <p class="tipAmount">Tip:</p>
+      <span class="Sb-tipValue">$0.00</span>
+      </div>
+
+
+      <div class="flex items-center justify-between w-full mb-4">
+        <!-- overall total amount-->
+      <p class="totalAmount">Total Amount:</p>
+      <span class="sb-totalAmountValue">$0.00</span>
+      </div>
+
+      <div class="flex items-center justify-between w-full mb-4">
+      <!-- tip per person amount-->
+       <p class="tipPerPerson">Tip Per Person:</p>
+      <span class="sb-tipPerPersonValue">$0.00</span>
+      </div>
+
+      <div class="flex items-center justify-between w-full mb-4">
+      <!-- total amount per person-->
+       <p class="totalAmountPerPerson">Total Per Person:</p>
+      <span class="sb-totalAmountPerPersonValue">$0.00</span>
+      </div>
+
     </div>
   </body>
 </html>
