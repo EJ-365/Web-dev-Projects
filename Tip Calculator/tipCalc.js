@@ -17,6 +17,8 @@ const priceInput = document.querySelector(".tipPriceValue"); // for the user inp
 const tipPercent = document.querySelectorAll(".tipPercent"); // to display the tip
 const tipAmount = document.querySelectorAll(".tipAmount"); // to display the tip amount
 const tipTotal = document.querySelectorAll(".tipTotal"); // to display the tip total
+
+// special variables are for tip recommendations 
 const special = document.querySelector(".special"); // recommendation tip percent
 const specialAMount = document.querySelector(".specialAmount"); // recommendation tip percent
 const specialTotal = document.querySelector(".specialTotal"); // recommendation tip percent
@@ -25,7 +27,7 @@ const specialTotal = document.querySelector(".specialTotal"); // recommendation 
 function clearTipCalc() {
   priceInput.value = 0; // set the input to 0
 
-  // loop through the tipTotal and the tipAmount, and then apply $0 in 2 decimal places
+  // loop through the tipTotal and the tipAmount, and then apply $0 in 2 decimal places when click clear btn
   for (let i = 0; i < tipAmount.length; i++) {
     tipAmount[i].textContent = `$${(0).toFixed(2)}`;
     tipTotal[i].textContent = `$${(0).toFixed(2)}`;
@@ -75,4 +77,4 @@ function priceCal() {
   });
 }
 
-priceCal();
+priceCal(); // function call: to calculate the everything tip amount, total and percent etc.
