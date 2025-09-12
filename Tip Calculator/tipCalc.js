@@ -25,7 +25,7 @@ const specialTotal = document.querySelector(".specialTotal"); // recommendation 
 
 // function to clear the price input and the result
 function clearTipCalc() {
-  priceInput.value = 0; // set the input to 0
+  priceInput.value = ""; // set the input to 0
 
   // loop through the tipTotal and the tipAmount, and then apply $0 in 2 decimal places when click clear btn
   for (let i = 0; i < tipAmount.length; i++) {
