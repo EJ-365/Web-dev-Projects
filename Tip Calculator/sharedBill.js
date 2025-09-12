@@ -27,7 +27,7 @@ function sharedBillMain() {
   // input validation function
   const validated = inputValidation(price, tip, numOfPeople); // for input validation
   if (validated) {
-    calcBillInput();
+    calcBillInput(); //  calc bill function call
   }
 }
 
@@ -106,6 +106,10 @@ function calcBillInput() {
 // function to clear the user input if click on clear
 function sharedBillClear() {
   tip.value = "";
+tipValue.textContent = `$${(0).toFixed(2)}`;
+tipPerPersonValue.textContent = `$${(0).toFixed(2)}`;
+totalAmountValue.textContent = `$${(0).toFixed(2)}`;
+totalPerPersonValue.textContent = `$${(0).toFixed(2)}`;
   numOfPeople.value = "";
   clearPrice(price);
 }
