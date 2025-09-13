@@ -92,8 +92,8 @@ function calcBillInput() {
     tipPerPersonEl.style.display = "none";
     totalAmountPerPersonEl.style.display = "none";
   } else {
-    tipPerPersonValue.style.display = "inline";
-    totalPerPersonValue.style.display = "inline";
+    tipPerPersonValue.style.display = "block";
+    totalPerPersonValue.style.display = "block";
     // tip per person
     const tipPerPerson = tipAmount / numOfPeopleInput;
     tipPerPersonValue.textContent = `$${tipPerPerson.toFixed(2)}`;
