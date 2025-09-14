@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Calender</title>
+    <!--google link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
     <!--tailwindcss link-->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!--style sheet-->
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
-    
+
+<body class="mx-auto container bg-gradient-to-br from-slate-950 to-purple-600 w-full h-screen flex-col flex justify-center items-center
+px-4 py-32">
+
+    <!--heading-->
+    <h2 class="text-5xl md:text-5xl text-white md:uppercase mb-24 mt-32 shadow-sm
+drop-shadow-lg border-4 px-3 py-3 border-slate-300">Mini Calender </h2>
+
+    <!--main container-->
+    <div class="calender-container mb-32 flex justify-center items-center bg-slate-200 w-80 h-full relative rounded-md
+drop-shadow-md shadow-violet-200 shadow-2xl">
+
+        <!-- month container-->
+        <div class="month-container  px-5 py-4 absolute top-0 left-0 min-w-80 w-1/2 text-white
+    text-center rounded-md drop-shadow-md shadow-slate-500 shadow-l">
+            <p class="text-5xl"> Decemeber </p>
+        </div>
+
+        <!--Date Day and year-->
+        <div class="flex flex-col justify-center items-center w-full mt-16 ">
+            <p class="dayOfWeek text-3xl text-gray-500 font-semibold text-center mt-10"> Sunday </p>
+            <p class="date text-8xl text-black font-bold w-80 text-center mt-4"> 13 </p>
+            <p class="year text-3xl text-gray-500 font-semibold w-80 text-center my-10"> 2025 </p>
+        </div>
+
+
+    </div>
+    <!--external links-->
+    <script src="index.js"></script>
 </body>
+
 </html>
