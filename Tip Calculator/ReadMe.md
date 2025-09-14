@@ -2,6 +2,7 @@
 
 ## Overview
 
+The Inspiration is from Calculator.net tip calculator.
 This project provides two calculators:
 
 - **Tip Calculator:** Quickly calculate tip amounts and totals for a given price.
