@@ -20,7 +20,7 @@ function main() {
 
   // let's connect them to the html
   monthEl.textContent = month;
-  dayOfWeek.textContent = dayOfWeek;
+  dayOfWeekEl.textContent = dayOfWeek;
   dateEL.textContent = date;
   yearEL.textContent = year;
 
