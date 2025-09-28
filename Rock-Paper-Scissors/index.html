@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="flex flex-col items-center justify-center h-screen w-full md:px-4 p-16 
+bg-gradient-to-br from-slate-400 to-slate-200">
+    <h1 class="md:text-4xl text-3xl md:font-bold text-center font-thin mb-10">Rock - Paper - Scissors</h1> 
+
+   <div class="flex items-center justify-center gap-x-10 text-center" id="choices">
+    <button class="bg-slate-300 md:shadow-xl  md:w-32 md:h-32 w-20 h-20 md:text-8xl text-5xl rounded-3xl hover:bg-gray-100 hover:ease-in hover:border-2 hover:border-slate-400    hover:duration-200 cursor-pointer" onclick="playGame('rock')">🪨</button>  
+    <button class="bg-slate-300 md:shadow-xl md:w-32 md:h-32 w-20 h-20 md:text-8xl text-5xl rounded-3xl hover:bg-gray-100 hover:ease-in hover:border-2 hover:border-slate-400  hover:duration-200 cursor-pointer" onclick="playGame('paper')">📜</button>
+    <button class="bg-slate-300 md:shadow-xl md:w-32 md:h-32  w-20 h-20 md:text-8xl text-5xl rounded-3xl hover:bg-gray-100 hover:ease-in hover:border-2 hover:border-slate-400  hover:duration-200 cursor-pointer" onclick="playGame('scissors')">✂️</button>
+   </div>
+
+   <!--Player and computer display:-->
+   <div class="my-10 md:w-full text-center"> 
+    <div id="playerDisplay" class="uppercase md:text-3xl text-2xl">Player: </div>
+   <div id="computerDisplay" class="uppercase md:text-3xl text-2xl">Computer: </div>
+   <div id="resultDisplay" class="uppercase mt-6 md:text-5xl font-bold text-3xl"></div>
+   </div>
+   
+   <script src="index.js"></script>
+</body>
+</html>
