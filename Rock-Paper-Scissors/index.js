@@ -12,3 +12,5 @@ const resultDisplay = document.getElementById("resultDisplay");
 function playGame() {
     alert("App In progress, coming soon!!!")
 }
+
+playGame(); // stop Here: remove this line when resume
