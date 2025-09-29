@@ -1,0 +1,8 @@
+/* to change the color; if win or lose, it will be applied dynamically with JS */
+.greenText{
+    color:green;
+}
+
+.redText{
+    color:red;
+}

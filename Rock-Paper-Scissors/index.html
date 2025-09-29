@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
+    <link rel="Stylesheet" href="index.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
 <body class="flex flex-col items-center justify-center h-screen w-full md:px-4 p-16 
@@ -23,6 +25,16 @@ bg-gradient-to-br from-slate-400 to-slate-200">
    <div id="computerDisplay" class="uppercase md:text-3xl text-2xl">Computer: </div>
    <div id="resultDisplay" class="uppercase mt-6 md:text-5xl font-bold text-3xl"></div>
    </div>
+
+   <!--score display-->
+   <div class="scoreDisplay text-2xl"> Player Score: 
+<span id="playerScoreDisplay" class="">0</span>
+</div>
+
+
+<div class="scoreDisplay text-2xl"> Computer Score: 
+    <span id="computerScoreDisplay" class="">0</span>
+    </div>
    
    <script src="index.js"></script>
 </body>
