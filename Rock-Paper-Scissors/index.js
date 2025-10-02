@@ -1,5 +1,5 @@
 /* This program demonstrate rock paper and scissors game */
-const choices = ["rock", "paper", "scissors"];
+const choices = ["rock", "paper", "scissors"]; // for computer choices
 
 // player and computer display
 const playerDisplay = document.getElementById("playerDisplay");
