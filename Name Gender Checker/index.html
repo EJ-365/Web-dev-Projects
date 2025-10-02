@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender name Checker</title>
+    <!--tailwindcss script-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex flex-col justify-center items-center min-h-screen w-full bg-gradient-to-r 
+from-purple-200 to-violet-900 px-4 py-8">
+    <h1 class=" cursor-pointer text-center font-bold md:text-6xl  text-4xl md:leading-snug 
+    sm:text-5xl leading-tight mb-8 bg-gradient-to-r text-transparent bg-clip-text from-purple-500  to-slate-900"> Check the Gender <br> of a Name </h1> 
+
+    <div class="text-center w-full max-w-md relative cursor-pointer mb-8">
+        <input type="search" id="user" value="Ejay" class="ring-2 ring-purple-950
+         bg-white px-6 py-4 pr-16 w-full text-center text-lg  sm:text-xl font-bold text-purple-500 rounded-full">
+         
+         <span class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-slate-200 rounded-full p-1.5 
+         text-2xl sm:text-xl md:text-2xl cursor-pointer" onclick="getGender()">&#128269;</span> 
+    </div>
+ 
+    <p class="displayResult text-center text-xl sm:text-2xl text-purple-900 px-4"></p> 
+    
+</body>
+</html>
