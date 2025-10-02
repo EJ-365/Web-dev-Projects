@@ -5,8 +5,8 @@ const displayResult = document.querySelector(".displayResult");
 async function getGender() {
   try {
     const getValue = user.value;
-    if (Number(getValue)) {
-      alert("Enter a string");
+    if (Number(getValue) || getValue === "") {
+      alert("Enter a name");
     }
     const response = await fetch(`https://api.genderize.io?name= ${getValue}`);
     const message = await response.json();
