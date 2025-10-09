@@ -11,6 +11,7 @@ A **responsive digital clock** web application built with HTML, CSS (Tailwind), 
 - 🌙 **Day/Night Theme** - Automatically switches between sun and moon icons
 - 📱 **Responsive Design** - Works on both desktop and mobile devices
 - 🎨 **Gradient Styling** - Beautiful gradient backgrounds and text effects
+- 📍 **Weather Information** - Displays current weather information based on user's location. Includes handling for "Location Not Found" error.
 
 ---
 
@@ -41,7 +42,7 @@ digital-clock/
 |------------|---------|
 | **HTML5** | Structure & markup |
 | **Tailwind CSS** | Styling & responsive design |
-| **JavaScript** | Clock functionality & DOM manipulation |
+| **JavaScript** | Clock functionality, DOM manipulation, and weather information retrieval |
 
 ---
 
@@ -59,6 +60,7 @@ digital-clock/
 ### 📱 Responsive Design
 - **Mobile-first** approach
 - Adaptive text sizes and layouts
+- Improved mobile responsiveness for various screen sizes
 - Cross-device compatibility
 
 ---
