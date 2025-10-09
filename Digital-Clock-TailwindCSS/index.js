@@ -65,7 +65,6 @@ setInterval(updateClock, 1000); // continue running every 1 secs; note 1000 = 1 
 
 /******************Weather functionality ********************** */
 /* 
-  Api key for Openweather: 13a1a5254d1d6319b1a2bd49fae225a1
   reverse geolocation for Openweather: http://api.openweathermap.org/geo/1.0/reverse?lat={lat}&lon={lon}&limit={limit}&appid={API key}
 
  getCoordinate will be use to get the weather information and to display the city and state name
