@@ -61,13 +61,15 @@ function updateClock() {
 updateClock(); // call the function
 setInterval(updateClock, 1000); // continue running every 1 secs; note 1000 = 1 milisec same thing as 1 sec
 
+
+
 /******************Weather functionality ********************** */
 /* 
   Api key for Openweather: 13a1a5254d1d6319b1a2bd49fae225a1
   reverse geolocation for Openweather: http://api.openweathermap.org/geo/1.0/reverse?lat={lat}&lon={lon}&limit={limit}&appid={API key}
 
  getCoordinate will be use to get the weather information and to display the city and state name
- the getCoordinate returns the lat and lon and then i use reverse  geolocation to convert it, to 
+ the getCoordinate returns the lat and lon and then i will use reverse  geolocation to convert it, to 
  get the city name and state for weather info
 
  */
@@ -82,14 +84,23 @@ function getCoordinate() {
         });
       },
       () => {
-        reject((cityDisplay.textContent = "N/A"));
+        cityDisplay.textContent = `Location Not Found`;
+        cityDisplay.classList.add('location-not-found');
+        cityDisplay.style.color = "red";
+        cityDisplay.style.fontSize = "18px";
+        tempDisplay.textContent = "";
+        descDisplay.textContent = "";
+        symbol.textContent = "";
+        weatherEmoji.textContent = "";
+        reject("Location Not Found"); // Reject with a simple message if location is not available
       }
     );
   });
 }
 
 // getlocation async to return the promise
-async function showCoordinates() {
+// showCoordinates() is the main function where all other function is being called
+async function showCoordinates(){
   try {
     const { lat, lon } = await getCoordinate();
     getLocation(lat, lon);
@@ -196,4 +207,4 @@ async function weatherInfo(lat, lon) {
     console.error(err);
   }
 }
-showCoordinates();
+showCoordinates(); // the main function

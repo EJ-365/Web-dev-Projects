@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="md:container mx-auto relative w-full h-screen text-transparent bg-gradient-to-br from-slate-800 to-violet-500
+<body class=" mx-auto relative w-full h-screen text-transparent bg-gradient-to-br from-slate-800 to-violet-500
     text-white text-center font-mono flex items-center justify-center">
 
     <!--clock title-->
@@ -18,7 +18,7 @@
     </div>
 
     <!--clock container-->
-    <div class="flex flex-col mx-auto md:container p-8 md:p-20 md:px-3 py-3 h-96 
+    <div class="flex flex-col mx-auto p-8 md:p-20 md:px-3 py-3  
     md:flex md:flex-col justify-center items-center ">
 
         <!--clock and ampm row-->
@@ -26,7 +26,7 @@
 
             <!--weather display div -->
             <div
-                class=" relative  md:w-32 p-2 md:p-4 m-2 md:ml-8 ml-2 text-white flex flex-col items-center text-center">
+                class=" relative   p-2 md:p-4 m-2 md:ml-8 ml-2 text-white flex flex-col items-center text-center">
                 <div class="weatherEmoji w-16 md:w-20 mx-auto mb-1 md:mb-2 text-4xl md:text-7xl text-center">☀️</div>
                 <div class="temp-row flex items-baseline justify-center">
                     <h1 class="tempDisplay text-4xl md:text-7xl mb-1 md:mb-2 font-bold">77</h1>
@@ -34,16 +34,16 @@
                 </div>
                 <p class="descDisplay text-xl md:text-2xl text-slate-100 font-extralight mb-0.5 md:mb-1.5 capitalize">
                     Sunny </p>
-                <p class="cityDisplay capitalize text-sm  text-slate-300">houston, TX </p>
+                <p class="cityDisplay location-not-found capitalize text-sm  text-slate-300">houston, TX </p>
             </div>
 
             <!--clock-->
-            <div id="clock" class="text-white text-5xl font-bold md:text-8xl md:font-mono md:font-bold md:ml-16
+            <div id="clock" class="text-white text-4xl font-bold md:text-8xl md:font-mono md:font-bold md:ml-16
      bg-clip-text md:text-transparent bg-gradient-to-tr from-pink-500 to-purple-500 text-center">12:09:02</div>
 
             <!--ampm-div-->
             <div class=" flex justify-center  p-4 w-20 md:flex md:justify-center items-center md:p-3  md:pl-2  md:w-52 md:h-52 bg-slate-950
-ml-10 md:ml-12 rounded-2xl relative ">
+ml-4 md:ml-12 rounded-2xl relative ">
 
                 <p
                     class=" text-orange-500  md:text-white  ampm uppercase font-medium text-3xl md:text-7xl md:font-thin md:font-mono">
@@ -58,7 +58,7 @@ ml-10 md:ml-12 rounded-2xl relative ">
 
         <!--date div-->
         <div
-            class=" mx-6 md:mx-24 md:container w-full px-2 md:block md:w-1/2  md:p-4 text-center border-2 shadow-md bg-white rounded-2xl md:mr-24 md:border-2 border-slate-300 md:bg-slate-950">
+            class=" mx-6 md:mx-24  w-full px-2 md:block md:w-1/2  md:p-4 text-center border-2 shadow-md bg-white rounded-2xl md:mr-24 md:border-2 border-slate-300 md:bg-slate-950">
             <div
                 class="date text-xl text-black font-bold md:font-extrabold font-mono md:text-3xl bg-clip-text md:text-transparent bg-gradient-to-tr from-pink-500 to-purple-500">
                 Sunday, May 22, 2022
