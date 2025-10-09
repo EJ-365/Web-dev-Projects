@@ -133,7 +133,7 @@ async function getLocation(lat, lon) {
 }
 
 /*  Weather information: shows weather details and other info 
-apiKey: 13a1a5254d1d6319b1a2bd49fae225a1;
+apiKey: "login to openWeather to see"
 
 url: https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid={API key}
 */
