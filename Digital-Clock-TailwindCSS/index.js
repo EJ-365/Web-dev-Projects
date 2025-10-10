@@ -64,6 +64,7 @@ setInterval(updateClock, 1000); // continue running every 1 secs; note 1000 = 1 
 
 
 /******************Weather functionality ********************** */
+
 /* 
   reverse geolocation for Openweather: http://api.openweathermap.org/geo/1.0/reverse?lat={lat}&lon={lon}&limit={limit}&appid={API key}
 
