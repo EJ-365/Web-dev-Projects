@@ -123,7 +123,7 @@ async function getLocation(lat, lon) {
     const response = await fetch(url); // fetching the geolocation api
     const data = await response.json(); // put the response in JSON format
     if (data && data.length) {
-      cityDisplay.textContent = `${data[0].name} ${data[0].state}`; // shows the city name and state
+      cityDisplay.textContent = `${data[0].name},${data[0].state}`; // shows the city name and state
     } else {
       console.log("City name not found");
     }
