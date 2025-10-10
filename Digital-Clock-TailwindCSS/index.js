@@ -167,6 +167,7 @@ async function weatherInfo(lat, lon) {
 
       case "01n": // Clear Sky for night
         emoji = "🌙";
+        break;
 
       case "02d":
       case "02n": // Few Clouds
