@@ -10,11 +10,11 @@ function updateClock() {
   let hours = now.getHours();
 
   /* for the moon and the sun to determine if it's 6pm(18) to 6am */
-  let isNightTime = false;
+  // let isNightTime = false;
 
-  if (hours >= 18 || hours < 6) {
-    isNightTime = true;
-  }
+  // if (hours >= 18 || hours < 6) {
+  //   isNightTime = true;
+  // }
 
   // initially, it's 24 hours clock and i have to convert it to 12 hours clock
 
@@ -46,14 +46,14 @@ function updateClock() {
   document.getElementById("clock").textContent = timeString; // output it to the clock element
 
   // change the moon and the sun faces
-  const moonSun = document.querySelector(".moon-sun"); // the image element
-  if (isNightTime) {
-    moonSun.src = "images/moon.png";
-    moonSun.alt = "moon";
-  } else {
-    moonSun.src = "images/sun.png";
-    moonSun.alt = "sun";
-  }
+  // const moonSun = document.querySelector(".moon-sun"); // the image element
+  // if (isNightTime) {
+  //   moonSun.src = "images/moon.png";
+  //   moonSun.alt = "moon";
+  // } else {
+  //   moonSun.src = "images/sun.png";
+  //   moonSun.alt = "sun";
+  // }
 
   document.querySelector(".date").textContent = currentDate;
 }
