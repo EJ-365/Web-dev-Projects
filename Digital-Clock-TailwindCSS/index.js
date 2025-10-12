@@ -76,7 +76,7 @@ setInterval(updateClock, 1000); // continue running every 1 secs; note 1000 = 1 
 
 function getCoordinate() {
   return new Promise((resolve, reject) => {
-    window.navigator.geolocation.getCurrentPosition(
+    window.navigator.geolocation.getCurrentPosition( 
       (position) => {
         resolve({
           lat: position.coords.latitude, // returns the latitude
