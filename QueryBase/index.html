@@ -1,98 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Query Base</title>
-      <!--tailwindcss link-->
-        <script src="https://cdn.tailwindcss.com"></script>
+    <!--tailwindcss link-->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-   <header class="bg-blue-900 text-white text-center">
-<nav class="flex items-center justify-between p-2 relative"> 
-    <a href="#logo" class="text-2xl ml-3 font-semibold text-center z-50">QueryBase</a> <!--logo goes here-->
+    <header class="bg-blue-900 text-white text-center">
+        <nav class="flex items-center justify-between p-2 relative">
+            <a href="#logo" class="text-2xl ml-3 font-semibold text-center z-50">QueryBase</a> <!--logo goes here-->
 
-    <button id="menu-toggle" class="md:hidden z-50 relative">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-    </button>
+            <button id="menu-toggle" class="md:hidden z-50 relative">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
 
-    
-    <ul class="hidden flex md:flex md:space-x-2 md:relative md:top-auto md:left-auto
+
+            <ul class="hidden flex md:flex md:space-x-2 md:relative md:top-auto md:left-auto
   md:w-auto md:h-auto   md:z-auto fixed inset-0 w-full h-screen bg-blue-900
   z-40 flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0">
-        <li><a href="#" class="bg-orange-400 py-1 px-3 pb-1.5 text-sm rounded-3xl text-center text-black hover:bg-orange-500 hover:duration-200">Submit a request</a></li>
-        <li><a href="#" class="bg-green-600 p-1 px-3 pb-2 text-center text-sm rounded-xl hover:bg-green-700 hover:duration-200">Sign In</a></li>
-    </ul>
+                <li><a href="#"
+                        class="bg-orange-400 py-1 px-3 pb-1.5 text-sm rounded-3xl text-center text-black hover:bg-orange-500 hover:duration-200">Submit
+                        a request</a></li>
+                <li><a href="#"
+                        class="bg-green-600 p-1 px-3 pb-2 text-center text-sm rounded-xl hover:bg-green-700 hover:duration-200">Sign
+                        In</a></li>
+            </ul>
 
 
-</nav>
-   </header>
+        </nav>
+    </header>
 
 
-<!--how can we help-->
-<main class=""> 
-<section class="bg-gray-200 w-full h-32 p-28 mx-auto  flex justify-center">
-        <form class="mx-auto text-center relative">
-            <h1 class="text-2xl font-bold mb-4"> How can we help? </h1>
-            <input type="search" placeholder="Search" class=" w-80 rounded-full px-2  py-1  pr-4 leading-snug pl-3
+    <!--how can we help-->
+    <main class="">
+        <section class="bg-gray-200 w-full h-32 p-28 mx-auto  flex justify-center">
+            <form class="mx-auto text-center relative">
+                <h1 class="text-2xl font-bold mb-4"> How can we help? </h1>
+                <input type="search" placeholder="Search" class=" w-80 rounded-full px-2  py-1  pr-4 leading-snug pl-3
             outline-none ring-1 ring-blue-900">
-            <span class="absolute right-3 top-13 z-10 hover:cursor-pointer text-md search-icon inline-block">🔍</span>
+                <span
+                    class="absolute right-3 top-13 z-10 hover:cursor-pointer text-md search-icon inline-block">&#128269;</span>
             </form>
-</section>
+        </section>
 
 
-<!--cards-->
-<section class="card-section mx-auto md:container text-center gap-4 w-full p-8 m-0  md:py-16 grid md:grid-cols-3  grid-cols-1 gap-x-0 place-items-center">
-<div class="border-2 rounded-md shadow-sm mb-4  w-80 h-52">
+        <!--cards-->
+        <section
+            class="card-section mx-auto md:container text-center gap-4 w-full p-8 m-0  md:py-16 grid md:grid-cols-3  grid-cols-1 gap-x-0 place-items-center">
+            <div class="border-2 rounded-md shadow-sm mb-4  w-80 h-52">
 
-<div class="w-full flex items-center">
-     <img src="images/branch.png" class="w-16 h-16 p-3">
-     <h3 class="font-semibold text-xl mx-4 text-center"> Branches </h3>
-     </div> 
-     
-    <div class="text-center flex items-center w-auto mx-auto container p-4" style="margin-left:25px">  
-        <p class="leading-snug text-center ml-18">QueryBase Branches lets you manage version, and document your designs in one place </p>
-    </div>
-    <a hre="#" class="text-blue-500 text-sm mb-8 hover:cursor-pointer hover:text-blue-700">Learn More → </a>
-</div>
+                <div class="w-full flex items-center">
+                    <img src="images/branch.png" class="w-16 h-16 p-3">
+                    <h3 class="font-semibold text-xl mx-4 text-center"> Branches </h3>
+                </div>
 
-<div class="border-2 rounded-md shadow-sm mb-4  w-80 h-52">
-
-    <div class="w-full flex items-center">
-         <img src="images/manager.png" class="w-16 h-16 p-3">
-         <h3 class="font-semibold text-xl mx-4"> Manage your account </h3>
-         </div> 
-         
-        <div class="text-center flex items-center w-auto mx-auto container p-4" style="margin-left:25px">  
-            <p class="leading-snug text-center ml-18">Configure your account settings, such as your email, profile details, and password. </p>
-        </div>
-        <a hre="#" class="text-blue-500 text-sm mb-8 hover:cursor-pointer hover:text-blue-700">Learn More → </a>
-    </div>
-
-    <div class="border-2 rounded-md shadow-smmb-4  w-80 h-52">
-
-        <div class="w-full flex items-center">
-             <img src="images/organization.png" class="w-16 h-16 p-3">
-             <h3 class="font-semibold text-xl mx-4"> Manage organizations, teams, and projects </h3>
-             </div> 
-             
-            <div class="text-center flex items-center w-auto mx-auto container p-4" style="margin-left:25px">  
-                <p class="leading-snug text-center ml-18">Use QueryBase organizations, teams, and projects to organize your people and your work. </p>
+                <div class="text-center flex items-center w-auto mx-auto container p-4" style="margin-left:25px">
+                    <p class="leading-snug text-center ml-18">QueryBase Branches lets you manage version, and document
+                        your designs in one place </p>
+                </div>
+                <a hre="#" class="text-blue-500 text-sm mb-8 hover:cursor-pointer hover:text-blue-700">Learn More → </a>
             </div>
-            <a hre="#" class="text-blue-500 text-sm mb-8 hover:cursor-pointer hover:text-blue-700">Learn More → </a>
-        </div>
 
-        <div class="border-2 rounded-md shadow-sm mb-4  w-80 h-52">
+            <div class="border-2 rounded-md shadow-sm mb-4  w-80 h-52">
 
-            <div class="w-full- flex items-center">
-                 <img src="images/payment.png" class="w-16 h-16 p-3">
-                 <h3 class="font-semibold text-xl mx-4"> Manage billing
-                </h3>
-                 </div> 
-                 
-                <div class="text-center flex items-center w-auto mx-auto container -4" style="margin-left:25px">  
+                <div class="w-full flex items-center">
+                    <img src="images/manager.png" class="w-16 h-16 p-3">
+                    <h3 class="font-semibold text-xl mx-4"> Manage your account </h3>
+                </div>
+
+                <div class="text-center flex items-center w-auto mx-auto container p-4" style="margin-left:25px">
+                    <p class="leading-snug text-center ml-18">Configure your account settings, such as your email,
+                        profile details, and password. </p>
+                </div>
+                <a hre="#" class="text-blue-500 text-sm mb-8 hover:cursor-pointer hover:text-blue-700">Learn More → </a>
+            </div>
+
+            <div class="border-2 rounded-md shadow-smmb-4  w-80 h-52">
+
+                <div class="w-full flex items-center">
+                    <img src="images/organization.png" class="w-16 h-16 p-3">
+                    <h3 class="font-semibold text-xl mx-4"> Manage organizations, teams, and projects </h3>
+                </div>
+
+                <div class="text-center flex items-center w-auto mx-auto container p-4" style="margin-left:25px">
+                    <p class="leading-snug text-center ml-18">Use QueryBase organizations, teams, and projects to
+                        organize your people and your work. </p>
+                </div>
+                <a hre="#" class="text-blue-500 text-sm mb-8 hover:cursor-pointer hover:text-blue-700">Learn More → </a>
+            </div>
+
+            <div class="border-2 rounded-md shadow-sm mb-4  w-80 h-52">
+
+                <div class="w-full- flex items-center">
+                    <img src="images/payment.png" class="w-16 h-16 p-3">
+                    <h3 class="font-semibold text-xl mx-4"> Manage billing
+                    </h3>
+                </div>
+
+                <div class="text-center flex items-center w-auto mx-auto container -4" style="margin-left:25px">
                     <p class="leading-snug text-center ml-18">Change subscriptions and payment details.</p>
                 </div>
                 <a hre="#" class="text-blue-500 text-sm mb-8 hover:cursor-pointer hover:text-blue-700">Learn More → </a>
@@ -101,85 +114,87 @@
             <div class="border-2 rounded-md shadow-sm mb-4  w-80 h-52">
 
                 <div class="w-full  flex items-center">
-                     <img src="images/authentication.png" class="w-16 h-16 p-3">
-                     <h3 class="font-semibold text-xl mx-4">Authenticate to QueryBase</h3>
-                     </div> 
-                     
-                    <div class="text-center flex items-center w-auto mx-auto container p-4" style="margin-left:25px">  
-                        <p class="leading-snug text-center ml-18">Set up and configure SSO, SCIM. and Just-in-Time provisioning.</p>
-                    </div>
-                    <a hre="#" class="text-blue-500 text-sm mb-8 hover:cursor-pointer hover:text-blue-700">Learn More → </a>
+                    <img src="images/authentication.png" class="w-16 h-16 p-3">
+                    <h3 class="font-semibold text-xl mx-4">Authenticate to QueryBase</h3>
                 </div>
 
-                <div class="border-2 rounded-md shadow-sm mb-4  w-80 h-52">
+                <div class="text-center flex items-center w-auto mx-auto container p-4" style="margin-left:25px">
+                    <p class="leading-snug text-center ml-18">Set up and configure SSO, SCIM. and Just-in-Time
+                        provisioning.</p>
+                </div>
+                <a hre="#" class="text-blue-500 text-sm mb-8 hover:cursor-pointer hover:text-blue-700">Learn More → </a>
+            </div>
 
-                    <div class="w-full flex items-center">
-                         <img src="images/technical-support.png" class="w-16 h-16 p-3">
-                         <h3 class="font-semibold text-xl mx-4">QueryBase support</h3>
-                         </div> 
-                        
-                        <div class="text-center flex items-center w-auto mx-auto container p-4" style="margin-left:25px">  
-                            <p class="leading-snug text-center ml-18">Get in touch with a human.</p>
-                        </div>
-                        <a hre="#" class="text-blue-500 text-sm mb-8 hover:cursor-pointer hover:text-blue-700">Learn More → </a>
-                    </div>
+            <div class="border-2 rounded-md shadow-sm mb-4  w-80 h-52">
 
-</section>
-</main>
+                <div class="w-full flex items-center">
+                    <img src="images/technical-support.png" class="w-16 h-16 p-3">
+                    <h3 class="font-semibold text-xl mx-4">QueryBase support</h3>
+                </div>
 
+                <div class="text-center flex items-center w-auto mx-auto container p-4" style="margin-left:25px">
+                    <p class="leading-snug text-center ml-18">Get in touch with a human.</p>
+                </div>
+                <a hre="#" class="text-blue-500 text-sm mb-8 hover:cursor-pointer hover:text-blue-700">Learn More → </a>
+            </div>
 
-
-
+        </section>
+    </main>
 
 
-<footer class="bg-blue-900 text-white">
-    <div class="grid md:grid-cols-4 columns-1 place-items-start gap-4 mx-auto container p-10">
-        <div>
-            <h4 class="font-bold text-lg">QueryBase</h4>
-            <a href="#" class="hover:underline block pt-2">Branches</a>
+
+
+
+
+    <footer class="bg-blue-900 text-white md:mt-48">
+        <div class="grid md:grid-cols-4 columns-1 place-items-start gap-4 mx-auto container p-10 md:h-56">
+            <div>
+                <h4 class="font-bold text-lg">QueryBase</h4>
+                <a href="#" class="hover:underline block pt-2">Branches</a>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-lg">Resources</h4>
+                <a href="#" class="hover:underline block pt-2">Blog</a>
+                <a href="#" class="hover:underline block pt-2">Help Center</a>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-lg">Community</h4>
+                <a href="#" class="hover:underline block pt-2">Twitter</a>
+                <a href="#" class="hover:underline block pt-2">LinkedIn</a>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-lg">Company</h4>
+                <a href="#" class="hover:underline">About Us</a>
+                <a href="#" class="hover:underline">Careers</a>
+            </div>
+
         </div>
 
-        <div>
-            <h4 class="font-bold text-lg">Resources</h4>
-            <a href="#" class="hover:underline block pt-2">Blog</a>
-            <a href="#" class="hover:underline block pt-2">Help Center</a>
+        <div class="mx-auto container mb-18 p-10 bg-blue-950 w-full h-10">
+            <p class="text-center italic"> All Rights Reserved &copy; <span class="copyRightYear">year</span></p>
         </div>
 
-        <div>
-            <h4 class="font-bold text-lg">Community</h4>
-            <a href="#" class="hover:underline block pt-2">Twitter</a>
-            <a href="#" class="hover:underline block pt-2">LinkedIn</a>
-        </div>
+    </footer>
 
-        <div>
-            <h4 class="font-bold text-lg">Company</h4>
-            <a href="#" class="hover:underline">About Us</a>
-            <a href="#" class="hover:underline">Careers</a>
-        </div>
-
-    </div>
-
-    <div class="mx-auto container mb-18">
-        <p class="text-center italic"> All Rights Reserved &copy; <span class="copyRightYear">year</span></p>
-    </div>
-
-</footer>
-
-  <script>
-    //copy right 
-    let copyRight = document.querySelector(".copyRightYear");
-    const getYear = new Date();
-    const year = copyRight.textContent = getYear.getFullYear();
+    <script>
+        //copy right 
+        let copyRight = document.querySelector(".copyRightYear");
+        const getYear = new Date();
+        const year = copyRight.textContent = getYear.getFullYear();
 
 
-    const menuToggle = document.getElementById("menu-toggle"); // get the toggle button
-    const menu = document.querySelector('ul'); // get the ul
+        const menuToggle = document.getElementById("menu-toggle"); // get the toggle button
+        const menu = document.querySelector('ul'); // get the ul
 
-    // toggle it 
-    menuToggle.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
-       
-    })
+        // toggle it 
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+
+        })
     </script>
 </body>
+
 </html>
