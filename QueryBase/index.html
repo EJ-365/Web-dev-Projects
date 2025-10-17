@@ -157,20 +157,21 @@
             <a href="#" class="hover:underline">Careers</a>
         </div>
 
-        <div>
-            <p> All Rights Reserved &copy;<span class="copyRighYear">year</span></p>
-        </div>
+    </div>
+
+    <div class="mx-auto container mb-18">
+        <p class="text-center italic"> All Rights Reserved &copy; <span class="copyRightYear">year</span></p>
     </div>
 
 </footer>
 
   <script>
     //copy right 
-    const copyRight = document.querySelector(".copyRightYear");
-    const getYear = new Date().getFullYear();
-    const year = copyRightYear.textContent = getYear;
+    let copyRight = document.querySelector(".copyRightYear");
+    const getYear = new Date();
+    const year = copyRight.textContent = getYear.getFullYear();
 
-    
+
     const menuToggle = document.getElementById("menu-toggle"); // get the toggle button
     const menu = document.querySelector('ul'); // get the ul
 
