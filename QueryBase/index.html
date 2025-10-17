@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <header class="bg-blue-900 text-white text-center">
-        <nav class="flex items-center justify-between p-2 relative">
+    <header class=" text-white text-center" style="background-color: #200571;">
+        <nav class="flex items-center justify-between p-4 relative">
             <a href="#logo" class="text-2xl ml-3 font-semibold text-center z-50">QueryBase</a> <!--logo goes here-->
 
             <button id="menu-toggle" class="md:hidden z-50 relative">
@@ -27,13 +27,14 @@
 
 
             <ul class="hidden flex md:flex md:space-x-2 md:relative md:top-auto md:left-auto
-  md:w-auto md:h-auto   md:z-auto fixed inset-0 w-full h-screen bg-blue-900
-  z-40 flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0">
-                <li><a href="#"
-                        class="bg-orange-400 py-1 px-3 pb-1.5 text-sm rounded-3xl text-center text-black hover:bg-orange-500 hover:duration-200">Submit
+  md:w-auto md:h-auto   md:z-auto fixed inset-0 w-full h-screen 
+  z-40 flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0" style="background-color: #200571;">
+                <li><a href="#" class="px-3 py-2 md:w-auto rounded-2xl text-center text-black hover:duration-200"
+                        style="background-color:#ffa500;">Submit
                         a request</a></li>
                 <li><a href="#"
-                        class="bg-green-600 p-1 px-3 pb-2 text-center text-sm rounded-xl hover:bg-green-700 hover:duration-200">Sign
+                        class=" mx-auto place-items-center inset-0 px-3 py-2 text-center rounded-2xl md:w-full hover:bg-green-400 hover:duration-200"
+                        style="background-color: #00b719;">Sign
                         In</a></li>
             </ul>
 
@@ -44,101 +45,81 @@
 
     <!--how can we help-->
     <main class="">
-        <section class="bg-gray-200 w-full h-32 p-28 mx-auto  flex justify-center">
-            <form class="mx-auto text-center relative">
-                <h1 class="text-2xl font-bold mb-4"> How can we help? </h1>
-                <input type="search" placeholder="Search" class=" w-80 rounded-full px-2  py-1  pr-4 leading-snug pl-3
-            outline-none ring-1 ring-blue-900">
+        <section class="md:w-auto md:h-28 p-40 md:mb-10  md:mx-auto md:flex-col flex justify-center"
+            style="background-color: #e8eaf6;">
+            <form class="mx-auto text-center relative md:pb-10 p-20">
+                <h1 class="md:text-3xl text-2xl font-bold mb-4"> How can we help? </h1>
+                <input type="search" placeholder="Search" class=" placeholder:text-xl placeholder:p-2 placeholder:text-slate-600 
+                w-96 rounded-full md:px-3 md:pt-3 pb-2.5 pt-3 leading-snug pl-3
+                    text-xl">
                 <span
-                    class="absolute right-3 top-13 z-10 hover:cursor-pointer text-md search-icon inline-block">&#128269;</span>
+                    class="absolute  md:p-3 right-24  top-32 p-2 md:top-32 z-10  hover:cursor-pointer text-xl search-icon ">&#128269;</span>
+
             </form>
         </section>
 
 
         <!--cards-->
         <section
-            class="card-section mx-auto md:container text-center gap-4 w-full p-8 m-0  md:py-16 grid md:grid-cols-3  grid-cols-1 gap-x-0 place-items-center">
-            <div class="border-2 rounded-md shadow-sm mb-4  w-80 h-52">
+            class="card-section mx-auto max-w-6xl w-full p-6 md:py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 place-items-stretch">
 
-                <div class="w-full flex items-center">
-                    <img src="images/branch.png" class="w-16 h-16 p-3">
-                    <h3 class="font-semibold text-xl mx-4 text-center"> Branches </h3>
+            <!--individual cards -->
+            <div class="card border rounded-lg shadow-sm bg-white p-4 flex flex-col justify-between w-full">
+                <div class="flex items-center gap-4">
+                    <img src="images/branch.png" alt="branches" class="w-14 h-14">
+                    <h3 class="font-semibold text-lg">Branches</h3>
                 </div>
-
-                <div class="text-center flex items-center w-auto mx-auto container p-4" style="margin-left:25px">
-                    <p class="leading-snug text-center ml-18">QueryBase Branches lets you manage version, and document
-                        your designs in one place </p>
-                </div>
-                <a hre="#" class="text-blue-500 text-sm mb-8 hover:cursor-pointer hover:text-blue-700">Learn More → </a>
+                <p class="mt-3 text-sm text-gray-700 leading-relaxed">QueryBase Branches lets you manage version and
+                    document your designs in one place.</p>
+                <a href="#" class="mt-4 text-blue-600 font-semibold hover:text-blue-800">Learn More →</a>
             </div>
 
-            <div class="border-2 rounded-md shadow-sm mb-4  w-80 h-52">
-
-                <div class="w-full flex items-center">
-                    <img src="images/manager.png" class="w-16 h-16 p-3">
-                    <h3 class="font-semibold text-xl mx-4"> Manage your account </h3>
+            <div class="card border rounded-lg shadow-sm bg-white p-4 flex flex-col justify-between w-full">
+                <div class="flex items-center gap-4">
+                    <img src="images/manager.png" alt="manage account" class="w-14 h-14">
+                    <h3 class="font-semibold text-lg">Manage your account</h3>
                 </div>
-
-                <div class="text-center flex items-center w-auto mx-auto container p-4" style="margin-left:25px">
-                    <p class="leading-snug text-center ml-18">Configure your account settings, such as your email,
-                        profile details, and password. </p>
-                </div>
-                <a hre="#" class="text-blue-500 text-sm mb-8 hover:cursor-pointer hover:text-blue-700">Learn More → </a>
+                <p class="mt-3 text-sm text-gray-700 leading-relaxed">Configure your account settings, such as your
+                    email, profile details, and password.</p>
+                <a href="#" class="mt-4 text-blue-600 font-semibold hover:text-blue-800">Learn More →</a>
             </div>
 
-            <div class="border-2 rounded-md shadow-smmb-4  w-80 h-52">
-
-                <div class="w-full flex items-center">
-                    <img src="images/organization.png" class="w-16 h-16 p-3">
-                    <h3 class="font-semibold text-xl mx-4"> Manage organizations, teams, and projects </h3>
+            <div class="card border rounded-lg shadow-sm bg-white p-4 flex flex-col justify-between w-full">
+                <div class="flex items-center gap-4">
+                    <img src="images/organization.png" alt="organizations" class="w-14 h-14">
+                    <h3 class="font-semibold text-lg">Organizations, teams & projects</h3>
                 </div>
-
-                <div class="text-center flex items-center w-auto mx-auto container p-4" style="margin-left:25px">
-                    <p class="leading-snug text-center ml-18">Use QueryBase organizations, teams, and projects to
-                        organize your people and your work. </p>
-                </div>
-                <a hre="#" class="text-blue-500 text-sm mb-8 hover:cursor-pointer hover:text-blue-700">Learn More → </a>
+                <p class="mt-3 text-sm text-gray-700 leading-relaxed">Use QueryBase organizations, teams, and projects
+                    to organize your people and your work.</p>
+                <a href="#" class="mt-4 text-blue-600 font-semibold hover:text-blue-800">Learn More →</a>
             </div>
 
-            <div class="border-2 rounded-md shadow-sm mb-4  w-80 h-52">
-
-                <div class="w-full- flex items-center">
-                    <img src="images/payment.png" class="w-16 h-16 p-3">
-                    <h3 class="font-semibold text-xl mx-4"> Manage billing
-                    </h3>
+            <div class="card border rounded-lg shadow-sm bg-white p-4 flex flex-col justify-between w-full">
+                <div class="flex items-center gap-4">
+                    <img src="images/payment.png" alt="billing" class="w-14 h-14">
+                    <h3 class="font-semibold text-lg">Manage billing</h3>
                 </div>
-
-                <div class="text-center flex items-center w-auto mx-auto container -4" style="margin-left:25px">
-                    <p class="leading-snug text-center ml-18">Change subscriptions and payment details.</p>
-                </div>
-                <a hre="#" class="text-blue-500 text-sm mb-8 hover:cursor-pointer hover:text-blue-700">Learn More → </a>
+                <p class="mt-3 text-sm text-gray-700 leading-relaxed">Change subscriptions and payment details.</p>
+                <a href="#" class="mt-4 text-blue-600 font-semibold hover:text-blue-800">Learn More →</a>
             </div>
 
-            <div class="border-2 rounded-md shadow-sm mb-4  w-80 h-52">
-
-                <div class="w-full  flex items-center">
-                    <img src="images/authentication.png" class="w-16 h-16 p-3">
-                    <h3 class="font-semibold text-xl mx-4">Authenticate to QueryBase</h3>
+            <div class="card border rounded-lg shadow-sm bg-white p-4 flex flex-col justify-between w-full">
+                <div class="flex items-center gap-4">
+                    <img src="images/authentication.png" alt="authentication" class="w-14 h-14">
+                    <h3 class="font-semibold text-lg">Authenticate to QueryBase</h3>
                 </div>
-
-                <div class="text-center flex items-center w-auto mx-auto container p-4" style="margin-left:25px">
-                    <p class="leading-snug text-center ml-18">Set up and configure SSO, SCIM. and Just-in-Time
-                        provisioning.</p>
-                </div>
-                <a hre="#" class="text-blue-500 text-sm mb-8 hover:cursor-pointer hover:text-blue-700">Learn More → </a>
+                <p class="mt-3 text-sm text-gray-700 leading-relaxed">Set up and configure SSO, SCIM, and Just-in-Time
+                    provisioning.</p>
+                <a href="#" class="mt-4 text-blue-600 font-semibold hover:text-blue-800">Learn More →</a>
             </div>
 
-            <div class="border-2 rounded-md shadow-sm mb-4  w-80 h-52">
-
-                <div class="w-full flex items-center">
-                    <img src="images/technical-support.png" class="w-16 h-16 p-3">
-                    <h3 class="font-semibold text-xl mx-4">QueryBase support</h3>
+            <div class="card border rounded-lg shadow-sm bg-white p-4 flex flex-col justify-between w-full">
+                <div class="flex items-center gap-4">
+                    <img src="images/technical-support.png" alt="support" class="w-14 h-14">
+                    <h3 class="font-semibold text-lg">QueryBase support</h3>
                 </div>
-
-                <div class="text-center flex items-center w-auto mx-auto container p-4" style="margin-left:25px">
-                    <p class="leading-snug text-center ml-18">Get in touch with a human.</p>
-                </div>
-                <a hre="#" class="text-blue-500 text-sm mb-8 hover:cursor-pointer hover:text-blue-700">Learn More → </a>
+                <p class="mt-3 text-sm text-gray-700 leading-relaxed">Get in touch with a human.</p>
+                <a href="#" class="mt-4 text-blue-600 font-semibold hover:text-blue-800">Learn More →</a>
             </div>
 
         </section>
