@@ -1,18 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejay Gabriel</title>
     <!--favicon-->
-    <link rel="icon" type="image/png" href="/images/EjayProfilePicUpdated.png" sizes="96x96" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/EjayProfilePicUpdated.png"
+      sizes="96x96"
+    />
     <!--tailwindcss link-->
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  </head>  
 
-<body>
-    <nav></nav>
-</body>
+  <body class="bg-slate-950" >
+    <header class="bg-slate-950 text-white text-center border-b-2 border-gray-400 md:px-10">
+      <nav class="flex items-center justify-between p-4 relative">
+        <a href="#" class="text-lg uppercase font-sans font-bold m-2 hover:text-slate-300">
+            Ejay Gabriel<span class="text-xl font-extrabold hover:text-orange-400 text-blue-600">.</span></a> 
 
+        <button id="menu-toggle" class="md:hidden z-50 relative">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+            </path>
+        </svg>
+
+        </button>
+
+        <ul class=" hidden flex md:flex md:space-x-6 p-2 md:relative inset-0 w-full h-screen fixed md:top-auto
+        md:left-auto md:w-auto md:z-auto md:h-auto z-auto justify-center
+        flex-col md:flex-row items-center space-y-6 md:space-y-0" 
+        style="background-color: #020617;" >
+            <li><a href="#" class="active:text-blue-300 hover:text-blue-400 p-2">Home</a></li>
+            <li><a href="#" class="active:text-blue-300 hover:text-blue-400 p-2">Projects</a></li>
+            <li><a href="#" class="active:text-blue-300 hover:text-blue-400 p-2">Contact</a></li>
+        </ul> 
+      </nav>
+    </header>
+
+    <main class="mt-12 relative">
+        <section id="home" class="text-white md:flex  justify-between items-center w-full p-16 ">
+            <div class="w-80 h-80 absolute left-50 top-0 -z-40 bg-gradient-to-tr from-violet-900 to-purple-800 blur-3xl rounded-full opacity-40"></div>
+            <div class="w-80 h-80 absolute right-0 bottom-0 -z-40 bg-gradient-to-tr from-violet-900 to-purple-800 blur-3xl rounded-full opacity-30"></div>
+            <div class="textDiv">
+                <h1 class="md:text-7xl text-4xl text-left font-extrabold mb-4 leading-relaxed">Ejay Gabriel</h1>
+                <p class="text-2xl text-blue-600 ">Frontend Developer</p>
+                <div class="mt-6">
+                    <p class="leading-snug mb-10 "> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Laborum beatae illum ut consectetur illo accusamus ea a
+                         obcaecati non, odio <br>libero earum eligendi rerum 
+                         aspernatur dolores nisi labore sequi! Facere?</p>
+                         <a href="#" class="bg-blue-600 px-3 py-2 md:text-left text-center rounded-md md:m-0 mx-auto hover:bg-blue-700">Download Resume</a>
+                </div>
+            </div>
+
+            <div class="imgDiv border-slate-800 border-2  mx-auto pl-2 rounded-full w-auto md:mb-0 mt-10">
+                <img src="/images/profilePic.png" class="h-auto max-w-full "  alt="profile picture"  width="350px">
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+
+
+
+    <script>
+        const toggleButton = document.getElementById('menu-toggle');
+        const menuUl = document.querySelector('ul');
+
+        toggleButton.addEventListener('click', ()=> {
+            menuUl.classList.toggle('hidden');
+        } )
+    </script>
+    <!-----------------------⛔⛔ DO NO ENTER------------------------------->
+  </body>
 </html>
