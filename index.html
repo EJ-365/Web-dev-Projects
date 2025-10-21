@@ -31,9 +31,10 @@
         </button>
 
         <ul class=" hidden flex md:flex md:space-x-6 p-2 md:relative inset-0 w-full h-screen fixed md:top-auto
-        md:left-auto md:w-auto md:z-auto md:h-auto z-auto justify-center
+        md:left-auto md:w-auto md:z-auto z-40 md:h-auto justify-center
         flex-col md:flex-row items-center space-y-6 md:space-y-0" 
-        style="background-color: #020617;" >
+        style="background-color: #07071f;" >
+
             <li><a href="#" class="active:text-blue-300 hover:text-blue-400 p-2">Home</a></li>
             <li><a href="#" class="active:text-blue-300 hover:text-blue-400 p-2">Projects</a></li>
             <li><a href="#" class="active:text-blue-300 hover:text-blue-400 p-2">Contact</a></li>
@@ -42,6 +43,7 @@
     </header>
 
     <main class="mt-12 relative">
+        <!--about session -->
         <section id="home" class="text-white md:flex  justify-between items-center w-full p-16 ">
             <div class="w-80 h-80 absolute left-50 top-0 -z-40 bg-gradient-to-tr from-violet-900 to-purple-800 blur-3xl rounded-full opacity-40"></div>
             <div class="w-80 h-80 absolute right-0 bottom-0 -z-40 bg-gradient-to-tr from-violet-900 to-purple-800 blur-3xl rounded-full opacity-30"></div>
@@ -60,6 +62,24 @@
                 <img src="/images/profilePic.png" class="h-auto max-w-full "  alt="profile picture"  width="350px">
             </div>
 
+        </section>
+
+
+        <!--Skill set-->
+        <section class="text-white p-16">
+            <div>
+                <h1 class="text-4xl font-semibold leading-snug md:underline md:decoration-blue-500 md:text-start text-center">My Skills</h1>
+                <div class="uppercase mt-8 grid md:grid-cols-3 md:gap-4 gap-4  text-left w-full">
+                    <span class="bg-slate-900  hover:bg-slate-800 cursor-pointer md:w-24 w-full text-center rounded-md px-2 py-1 font-bold border-2 border-slate-700">
+                        html
+                    </span>
+                    <span class="bg-slate-900 hover:bg-slate-800 cursor-pointer md:w-24 w-full text-center rounded-md px-2 py-1 font-bold border-2 border-slate-700">css</span>
+                    <span class="bg-slate-900 hover:bg-slate-800 cursor-pointer md:w-24 w-full text-center rounded-md px-2 py-1 font-bold border-2 border-slate-700">js</span>
+                    <span class="bg-slate-900 hover:bg-slate-800 cursor-pointer md:w-24 w-full text-center rounded-md px-2 py-1 font-bold border-2 border-slate-700">react</span>
+                    <span class="bg-slate-900 hover:bg-slate-800 cursor-pointer md:w-36 w-auto  text-center rounded-md px-2 py-1 font-bold border-2 border-slate-700">Git+Github</span>
+                    <span class="bg-slate-900 hover:bg-slate-800 cursor-pointer md:w-24 w-full last:text-center rounded-md px-2 py-1 font-bold border-2 border-slate-700">UI/UX</span>
+                </div>
+            </div>
         </section>
     </main>
 
