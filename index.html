@@ -1,91 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejay Gabriel</title>
     <!--favicon-->
-    <link
-      rel="icon"
-      type="image/png"
-      href="/images/profilePic.png"
-      sizes="96x96"
-    />
+    <link rel="icon" type="image/png" href="/images/profilePic.png" sizes="96x96" />
     <!--tailwindcss link-->
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>  
+    <!-- Font Awesome (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-  <body class="bg-slate-950" >
+<body class="bg-slate-950">
     <header class="bg-slate-950 text-white text-center border-b-2 border-gray-400 md:px-10">
-      <nav class="flex items-center justify-between p-4 relative">
-        <a href="#" class="text-lg uppercase font-sans font-bold m-2 hover:text-slate-300">
-            Ejay Gabriel<span class="text-xl font-extrabold hover:text-orange-400 text-blue-600">.</span></a> 
+        <nav class="flex items-center justify-between p-4 relative">
+            <a href="#" class="text-lg uppercase font-sans font-bold m-2 hover:text-slate-300">
+                Ejay Gabriel<span class="text-xl font-extrabold hover:text-orange-400 text-blue-600">.</span></a>
 
-        <button id="menu-toggle" class="md:hidden z-50 relative">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
-            </path>
-        </svg>
+            <button id="menu-toggle" class="md:hidden z-50 relative">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
 
-        </button>
+            </button>
 
-        <ul class=" hidden flex md:flex md:space-x-6 p-2 md:relative inset-0 w-full h-screen fixed md:top-auto
+            <ul class=" hidden flex md:flex md:space-x-6 p-2 md:relative inset-0 w-full h-screen fixed md:top-auto
         md:left-auto md:w-auto md:z-auto z-40 md:h-auto justify-center
-        flex-col md:flex-row items-center space-y-6 md:space-y-0" 
-        style="background-color: #07071f;" >
+        flex-col md:flex-row items-center space-y-6 md:space-y-0" style="background-color: #07071f;">
 
-            <li><a href="#" class="active:text-blue-300 hover:text-blue-400 p-2">Home</a></li>
-            <li><a href="#" class="active:text-blue-300 hover:text-blue-400 p-2">Projects</a></li>
-            <li><a href="#" class="active:text-blue-300 hover:text-blue-400 p-2">Contact</a></li>
-        </ul> 
-      </nav>
+                <li><a href="./index.html" class="active:text-blue-300 hover:text-blue-400 p-2">Home</a></li>
+                <li><a href="./allProject.html" class="active:text-blue-300 hover:text-blue-400 p-2">Projects</a></li>
+                <li><a href="#" class="active:text-blue-300 hover:text-blue-400 p-2">Contact</a></li>
+                <li><a href="https://github.com/EJ-365"><i
+                            class="fa-brands fa-github text-2xl mx-3 active:text-blue-300 hover:text-blue-400 p-2"></i></a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="mt-12 relative md:pl-32">
+    <main class="mt-12 md:p-24 p-10">
         <!--about me session -->
-        <section id="home" class="text-white md:flex justify-between items-center w-full p-16 ">
-            <div class="w-80 h-80 absolute left-50 top-0 -z-40 bg-gradient-to-tr from-violet-900 to-purple-800 blur-3xl rounded-full opacity-40"></div>
-            <div class="w-80 h-80 absolute right-0 bottom-0 -z-40 bg-gradient-to-tr from-violet-900 to-purple-800 blur-3xl rounded-full opacity-30"></div>
-           
+        <section id="home" class="relative  text-white md:flex justify-between items-center w-full md:p-0 ">
+            <div
+                class="w-80 h-80 absolute left-50 top-0 -z-40 bg-gradient-to-tr from-violet-900 to-purple-800 blur-3xl rounded-full opacity-40">
+            </div>
+            <div
+                class="w-80 h-80 absolute right-0 bottom-0 -z-40 bg-gradient-to-tr from-violet-900 to-purple-800 blur-3xl rounded-full opacity-30">
+            </div>
+
             <!--text div-->
             <div class="textDiv">
                 <h1 class="md:text-7xl text-4xl text-left font-extrabold mb-4 leading-relaxed">Ejay Gabriel</h1>
-                <p class="text-2xl text-blue-600 ">Frontend Developer</p>
+                <p class="text-2xl text-blue-600 mt-8 ">Frontend Developer</p>
                 <div class="mt-6">
-                    <p class="leading-snug mb-10 "> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Laborum beatae illum ut consectetur illo accusamus ea a
-                         obcaecati non, odio <br>libero earum eligendi rerum 
-                         aspernatur dolores nisi labore sequi! Facere?</p>
-                         <a href="#" class="bg-blue-600 px-3 py-2 md:text-left text-center rounded-md md:m-0 mx-auto hover:bg-blue-700">Download Resume</a>
+                    <p class="leading-snug mb-10 "> Hi there! I'm Ejay Gabriel, a frontend developer and computer
+                        science major. <br>
+                        I possess strong skills in HTML, CSS, JavaScript, and React.js, <br> having completed over 15
+                        coding
+                        projects. <br> I am passionate about my career goals and always eager to learn how things work.
+                    </p>
+                    <a href="#"
+                        class="bg-blue-600 px-3 py-2 md:text-left text-center rounded-md md:m-0 mx-auto hover:bg-blue-700">Download
+                        Resume</a>
                 </div>
             </div>
 
-               <!--img div-->
-            <div class="imgDiv border-slate-800 border-2  mx-auto pl-2 rounded-full w-auto md:mb-0 mt-10">
-                <img src="/images/profilePic.png" class="h-auto  md:m-0 mx-auto  text-center"  alt="profile picture"  width="350px">
+            <!--img div-->
+            <div class="imgDiv border-slate-800 border-2  mx-auto pl-2 rounded-full w-auto mt-10">
+                <img src="/images/profilePic.png" class="h-auto  md:m-0 mx-auto  text-center " alt="profile picture"
+                    width="350px">
             </div>
 
         </section>
 
 
         <!--Skill set-->
-        <section class="text-white p-16">
+        <section class="text-white p-0 mt-8">
             <div>
-                <h1 class="text-4xl font-semibold leading-snug md:underline md:decoration-blue-500 md:text-start text-center">My Skills</h1>
-                <difv class="uppercase mt-8 flex md:grid-cols-3 md:gap-2 text-left w-full">
-                    <span class="bg-slate-900  hover:bg-slate-800 cursor-pointer md:w-24 w-full text-center rounded-md px-2 py-1 font-bold border-2 border-slate-700">
-                        html
+                <h2
+                    class="md:text-2xl text-lg font-bold text-center mt-20 md:mt-10 leading-snug md:underline md:decoration-blue-500 md:text-start">
+                    Skills:
+                </h2>
+                <div
+                    class="uppercase mt-8 md:flex md:gap-8 md:text-left max-w-full text-lg font-bold md:flex-wrap inline-grid grid-cols-2 gap-4 text-center ">
+                    <span
+                        class="bg-slate-900 px-4 py-2 hover:bg-slate-800 cursor-pointer w-auto text-center rounded-md  font-bold border-2 border-slate-700">
+                        <i class="fa-brands fa-html5"></i> html
                     </span>
-                    <span class="bg-slate-900 hover:bg-slate-800 cursor-pointer md:w-24 w-full text-center rounded-md px-2 py-1 font-bold border-2 border-slate-700">css</span>
-                    <span class="bg-slate-900 hover:bg-slate-800 cursor-pointer md:w-24 w-full text-center rounded-md px-2 py-1 font-bold border-2 border-slate-700">js</span>
-                    <span class="bg-slate-900 hover:bg-slate-800 cursor-pointer md:w-24 w-full text-center rounded-md px-2 py-1 font-bold border-2 border-slate-700">react</span>
-                    <span class="bg-slate-900 hover:bg-slate-800 cursor-pointer md:w-36 w-auto  text-center rounded-md px-2 py-1 font-bold border-2 border-slate-700">Git+Github</span>
-                    <span class="bg-slate-900 hover:bg-slate-800 cursor-pointer md:w-24 w-full last:text-center rounded-md px-2 py-1 font-bold border-2 border-slate-700">UI/UX</span>
-                </difv>
+                    <span
+                        class="bg-slate-900 px-4 py-2 hover:bg-slate-800 cursor-pointer w-auto text-center rounded-md  font-bold border-2 border-slate-700">
+                        <i class="fa-brands fa-css3-alt"></i> css
+                    </span>
+                    <span
+                        class="bg-slate-900 px-4 py-2 hover:bg-slate-800 cursor-pointer w-auto text-center rounded-md before:font-bold border-2 border-slate-700">
+                        <i class="fa-brands fa-js"></i> javascript
+                    </span>
+                    <span
+                        class="bg-slate-900 md:px-4 md:py-2 h-auto hover:bg-slate-800 cursor-pointer w-auto text-center rounded-md before:font-bold border-2 border-slate-700">
+                        <i class="fa-brands fa-react"></i> React.JS
+                    </span>
+                    <span
+                        class="bg-slate-900 px-4 py-2  hover:bg-slate-800 cursor-pointer w-auto  text-center rounded-md  font-bold border-2 border-slate-700">
+                        <i class="fa-brands fa-github"></i> Git+Github
+                    </span>
+                    <span
+                        class="bg-slate-900 px-10 py-2 hover:bg-slate-800 cursor-pointer w-auto last:text-center rounded-md  font-bold border-2 border-slate-700">
+                        <i class="fa-solid fa-swatchbook"></i> UI/UX
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!--feature projects section-->
+        <section class="text-white my-8">
+            <h3 class="md:text-2xl text-lg font-bold md:text-start text-center my-14"> Featured Projects </h3>
+
+            <div class="md:flex md:flex-wrap md:flex-row justify-center flex-col md:space-x-1 
+                md:space-y-1 gap-20 md:gap-6 md:p-0 md:place-items-start place-items-center
+                 container mx-auto py-10 md:py-0">
+
+                <!--project 1-->
+                <div
+                    class="cardBlock border-2 border-slate-900 hover:border-slate-700 max-w-72 rounded-md shadow-md hover:bg-slate-900 transform transition-transform duration-300 hover:scale-105 cursor-pointer">
+                    <div class="imgCard">
+                        <a href="./Digital-Clock-TailwindCSS/index.html"><img src="images/digital-clock-tailwind.png"
+                                alt="tailwind-digital-clock" title="Tailwind Digital Clock" class="w-full"></a>
+                    </div>
+
+                    <div class="textCard bg-slate-900 p-4">
+                        <div class="text-end flex justify-between">
+                            <h3 class="md:font-bold text-xl leading-tight text-start"> Tailwind - Digital Clock </h3>
+                            <span
+                                class="px-3 py-1 text-xs md:text-sm text-center rounded-full h-8 bg-purple-800 md:font-semibold">New</span>
+                        </div>
+                        <p class="leading-snug text-sm mt-2">Modern digital clock showing time, date, and local weather
+                            using TailwindCSS.</p>
+                    </div>
+
+                </div>
+
+
+                <!--project 2-->
+                <div
+                    class="cardBlock border-2 border-slate-900 hover:border-slate-700 max-w-72 rounded-md shadow-md hover:bg-slate-900 transform transition-transform duration-300 hover:scale-105 cursor-pointer">
+                    <div class="imgCard">
+                        <a href="https://ej-365.github.io/PizzaProject/index.html"><img src="images/instantPizza.png"
+                                alt="instant pizza webpage image" title="Instant Pizza" class="w-full"></a>
+                    </div>
+
+                    <div class="textCard bg-slate-900 p-4">
+                        <h3 class="md:font-bold text-xl leading-tight">Instant Pizza</h3>
+                        <p class="leading-snug text-sm mt-2">Responsive pizza delivery website with menu layouts built
+                            using Bootstrap.</p>
+                    </div>
+
+                </div>
+
+
+                <!--project 3-->
+                <div
+                    class="cardBlock border-2 border-slate-900 hover:border-slate-700 max-w-72 rounded-md shadow-md hover:bg-slate-900 transform transition-transform duration-300 hover:scale-105 cursor-pointer">
+                    <div class="imgCard">
+                        <a href="./Rock-Paper-Scissors/index.html"><img src="images/rockPaperScissors.png"
+                                alt="rock paper scissors image" title="Rock Paper Scissors" class="w-full"></a>
+                    </div>
+
+                    <div class="textCard bg-slate-900 p-4">
+                        <h3 class="md:font-bold text-xl leading-tight"> Rock Paper Scissors </h3>
+                        <p class="leading-snug text-sm mt-2">Interactive Rock-Paper-Scissors game with score tracking
+                            and computer opponent.</p>
+                    </div>
+
+                </div>
+
+
+                <!--project 4-->
+                <div
+                    class="cardBlock border-2 border-slate-900 hover:border-slate-700 max-w-72 rounded-md shadow-md hover:bg-slate-900 transform transition-transform duration-300 hover:scale-105 cursor-pointer">
+                    <div class="imgCard">
+                        <a href="./Temperature Converter/index.html"><img src="images/temperatureConverter.png"
+                                alt="temperature converter image" title="Temperature Converter" class="w-full"></a>
+                    </div>
+
+                    <div class="textCard bg-slate-900 p-4">
+                        <h3 class="md:font-bold text-xl leading-tight"> Temperature Converter</h3>
+                        <p class="leading-snug text-sm mt-2">Simple tool for converting temperatures between Celsius and
+                            Fahrenheit.</p>
+                    </div>
+
+                </div>
+
+
+                <!--project 5-->
+                <div
+                    class="cardBlock border-2 border-slate-900 hover:border-slate-700 max-w-72 rounded-md shadow-md hover:bg-slate-900 transform transition-transform duration-300 hover:scale-105 cursor-pointer">
+                    <div class="imgCard">
+                        <a href="./NetflixLandingPage/index.html"><img src="images/netflixLandingPage.png"
+                                alt="netflix-landing-page-image" title="Netflix Landing Page" class="w-full"></a>
+                    </div>
+
+                    <div class="textCard bg-slate-900 p-4">
+                        <h3 class="md:font-bold text-xl leading-tight"> Netflix landing Page </h3>
+                        <p class="leading-snug text-sm mt-2">Netflix landing page clone with responsive design and
+                            sign-up form.</p>
+                    </div>
+
+                </div>
+
+
+                <!--project 6-->
+
+                <div
+                    class="cardBlock border-2 border-slate-900 hover:border-slate-700 max-w-72 rounded-md shadow-md hover:bg-slate-900 transform transition-transform duration-300 hover:scale-105 cursor-pointer">
+                    <div class="imgCard">
+                        <a href="./QueryBase/index.html"><img src="images/queryBase.png" alt="queryBase image"
+                                class="w-full"></a>
+                    </div>
+
+                    <div class="textCard bg-slate-900 p-4">
+                        <div class="text-end flex justify-between">
+                            <h3 class="md:font-bold text-xl leading-tight"> QueryBase </h3>
+                            <span
+                                class="px-3 py-1.5 text-xs md:text-sm text-center rounded-full bg-purple-700 md:font-semibold">New</span>
+                        </div>
+                        <p class="leading-snug text-sm mt-2">Help center interface with search functionality and account
+                            management.</p>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <!--view all-->
+            <div class="mx-auto container mt-6 flex items-center justify-center">
+                <a href="./allProject.html"
+                    class=" px-6 capitalize bg-blue-600  py-2 md:text-left text-center rounded-md md:m-0 mx-auto hover:bg-blue-700">
+                    View all projects</a>
+            </div>
+        </section>
+
+
+        <!--Get in touch session-->
+        <section id="getInTouch" class="text-white my-8 border-t-2 border-slate-800 ">
+            <h2 class="capitalize text-center text-2xl mt-10 font-bold"> Get in touch </h2>
+            <div class="md:flex md:justify-between items-start gap-8 grid grid-cols-1 max-w-4xl mx-auto">
+                <form class="myForm flex-1 max-w-xl">
+                    <p for="name" class="mb-2"> Name </p>
+                    <input type="text" placeholder="Your Name" id="name" class="w-full px-2
+                    py-1.5 rounded-md bg-slate-800 focus:outline-none  focus:ring-2 ring-slate-700 mb-4">
+
+                    <!--email-->
+                    <p for="name" email="mb-4"> Email </p>
+                    <input type="email" placeholder="Your Email" id="email" class="w-full px-2 mt-2 mb-4
+                    py-1.5 rounded-md bg-slate-800 focus:outline-none  focus:ring-2 ring-slate-700">
+
+                    <!--text area-->
+                    <p for="name" email="my-4"> Messages </p>
+                    <textarea cols="40" row="1"
+                        class=" w-full mb-4 rounded-md bg-slate-800 mt-4 focus:outline-none  focus:ring-2 ring-slate-700">
+                    </textarea>
+                    <a
+                        class="mt-4 px-6 capitalize bg-blue-600 cursor-pointer py-2 text-center rounded-md inline-block hover:bg-blue-700">
+                        Send Message </a>
+                </form>
+
+                <!--connect with me-->
+                <div class="mt-10 md:mt-0">
+                    <h3 class="my-4 text-lg font-bold">Connect with me </h3>
+                    <p class="my-2"> Find me on these platforms: </p>
+                    <a href="https://www.linkedin.com/in/ejay-gabriel-24a7261bb/"><i
+                            class="fa-brands fa-linkedin text-2xl mx-3"></i></a>
+                    <a href="https://github.com/EJ-365"><i class="fa-brands fa-github text-2xl mx-3"></i></a>
+                </div>
             </div>
         </section>
     </main>
 
+    <!--footer-->
+    <footer class="border-t-2 border-slate-800 text-gray-400 px-12 pb-12 pt-1">
+        <div class="flex md:flex-row items-center md:justify-between mt-4 gap-1 flex-col justify-start">
+            <p id="copyRight"> @2024 Ejeme. All rights reserved </p>
+            <ul class="space-x-4">
+                <a href="" class="active:text-blue-300 hover:text-blue-400 p-2"> Home </a>
+                <a href="./allProject.html" class="active:text-blue-300 hover:text-blue-400 p-2"> Projects </a>
+                <a href="" class="active:text-blue-300 hover:text-blue-400 p-2"> Contact </a>
+            </ul>
+        </div>
+    </footer>
 
 
 
@@ -96,10 +304,17 @@
         const toggleButton = document.getElementById('menu-toggle');
         const menuUl = document.querySelector('ul');
 
-        toggleButton.addEventListener('click', ()=> {
+        toggleButton.addEventListener('click', () => {
             menuUl.classList.toggle('hidden');
-        } )
+        });
+
+        // copy right year and owners name
+        let name = "Ejay Gabriel";
+        const copyRight = document.getElementById('copyRight');
+        let year = new Date().getFullYear();
+        copyRight.textContent = (`@ ${year} ${name}. All rights reserved`);
     </script>
     <!-----------------------⛔⛔ DO NO ENTER------------------------------->
-  </body>
+</body>
+
 </html>
