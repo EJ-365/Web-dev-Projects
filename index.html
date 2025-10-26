@@ -15,7 +15,7 @@
 </head>
 
 <body class="bg-slate-950">
-    <header class="bg-slate-950 text-white text-center border-b-2 border-slate-800 md:px-10">
+    <header class="bg-slate-950 text-white text-center border-b-2 border-slate-800 md:px-10 h-24">
         <nav class="flex items-center justify-between p-4 relative">
             <a href="#" class="text-lg uppercase font-sans font-bold m-2 hover:text-slate-300">
                 Ejay Gabriel<span class="text-xl font-extrabold hover:text-orange-400 text-blue-600">.</span></a>
@@ -31,7 +31,8 @@
 
             <ul class=" hidden flex md:flex md:space-x-6 p-2 md:relative inset-0 w-full h-screen fixed md:top-auto
         md:left-auto md:w-auto md:z-auto z-40 md:h-auto justify-center
-        flex-col md:flex-row items-center space-y-6 md:space-y-0" style="background-color: #07071f;">
+        flex-col md:flex-row items-center space-y-6 md:space-y-0 md:bg-none md:bg-slate-950"
+                style="background-color: #020617;">
 
                 <li><a href="./index.html" class="active:text-blue-300 hover:text-blue-400 p-2">Home</a></li>
                 <li><a href="./allProject.html" class="active:text-blue-300 hover:text-blue-400 p-2">Projects</a></li>
@@ -263,9 +264,8 @@
 
                     <!--text area-->
                     <p for="name" email="my-4"> Messages </p>
-                    <textarea cols="40" row="1"
-                        class=" w-full mb-4 rounded-md bg-slate-800 mt-4 focus:outline-none  focus:ring-2 ring-slate-700">
-                    </textarea>
+                    <textarea id="message" rows="5" placeholder="Your Message..."
+                        class="text-left px-4 pt-4 w-full mb-4 rounded-md bg-slate-800 mt-4 focus:outline-none focus:ring-2 ring-slate-700"></textarea>
                     <a
                         class="mt-4 px-6 capitalize bg-blue-600 cursor-pointer py-2 text-center rounded-md inline-block hover:bg-blue-700">
                         Send Message </a>
