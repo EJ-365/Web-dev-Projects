@@ -14,7 +14,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-zinc-950 ">
+<body class="bg-zinc-950 overflow-x-hidden">
     <header class="md:mt-0 mt-8">
         <nav class="md:p-10 md:flex-row flex flex-col justify-between items-center z-40 mx-4 md:px-4 ">
             <div class="text-center pl-4">
@@ -25,7 +25,7 @@
 
             <ul class="no-underline list-none flex space-x-6 items-center px-4 md:mt-0 mt-8">
                 <li><a href=""
-                        class="no-underline text-red-900 text-2xl hover:text-white hover:p-2 hover:bg-red-700 rounded-full duration-200 hover:border-dashed hover:shadow-lg hover:uppercase">
+                        class="no-underline md:text-red-900 text-2xl text-zinc-500 hover:text-white hover:p-2 hover:bg-red-700 rounded-full duration-200 hover:border-dashed hover:shadow-lg hover:uppercase">
                         Home</a></li>
                 <li><a href=""
                         class="no-underline text-red-900 text-2xl hover:text-white hover:p-2 hover:bg-red-700 rounded-full duration-200  hover:border-dashed hover:shadow-lg hover:uppercase">
@@ -39,9 +39,9 @@
 
     <main class="p-2 font-mono font-bold">
         <article>
-            <header class="text-sm md:flex-row flex flex-col justify-center items-center m-0 p-0 w-full">
+            <header class="text-sm md:flex-row flex flex-col justify-center items-center m-0 p-0 w-full max-w-full">
 
-                <div class=" w-auto text-center text-red-900 md:text-left md:flex-grow md:pr-8 pl-4 ">
+                <div class=" w-auto text-center text-red-800 md:text-left md:flex-grow md:pr-8 pl-4 ">
                     <h1 class="font-mono p-2 py-3  rounded-md  leading-tight text-4xl md:underline md:decoration-dotted  underline decoration-double
           hover:bg-black hover:w-fit  hover:text-zinc-800 md:border-none duration-200 md:pl-10 cursor-pointer "> What
                         is Halloween
@@ -54,7 +54,7 @@
                 </div>
 
                 <!--for the image-->
-                <div class="p-4 flex justify-end">
+                <div class="p-4 flex justify-end max-w-full">
                     <img src="https://tinyurl.com/halloweenImage" alt="halloween" class="rounded-lg m-auto h-auto"
                         width="500px">
                 </div>
@@ -87,7 +87,7 @@
                 </p>
 
                 <div class="">
-                    <h3 class="text-2xl text-red-800 mt-20"> Source</h3>
+                    <h3 class="text-2xl md:text-red-800 mt-20"> Source</h3>
                     <p>
                         <a href="https://www.history.com/topics/halloween/history-of-halloween"
                             class="mb-2 text-md  hover:text-red-900">https://www.history.com/topics/halloween/history-of-halloween</a>
