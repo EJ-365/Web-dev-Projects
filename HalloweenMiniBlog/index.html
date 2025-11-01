@@ -5,8 +5,6 @@
     <title>Halloween</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--favicon-->
-    <link rel="icon" type="image/png" href="/images/profilePic.png" sizes="96x96" />
     <!--tailwindcss link-->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome (CDN) -->
@@ -19,13 +17,13 @@
         <nav class="md:p-10 md:flex-row flex flex-col justify-between items-center z-40 mx-4 md:px-4 ">
             <div class="text-center pl-4">
                 <a href="#"
-                    class="hover:-translate-x-1/2  text-center no-underline font-bold text-4xl text-red-900 hover:p-2 hover:rounded-3xl hover:bg-red-500 px-3 rounded-md bg-red-800 hover:text-red-300 duration-200">
+                    class="hover:-translate-x-1/2  text-center no-underline font-bold text-4xl md:text-red-300 text-red-400 hover:p-2 hover:rounded-3xl hover:bg-red-500 px-3 rounded-md bg-red-800 hover:text-red-300 duration-200">
                     Halloween </a>
             </div>
 
             <ul class="no-underline list-none flex space-x-6 items-center px-4 md:mt-0 mt-8">
                 <li><a href=""
-                        class="no-underline md:text-red-900 text-2xl text-zinc-500 hover:text-white hover:p-2 hover:bg-red-700 rounded-full duration-200 hover:border-dashed hover:shadow-lg hover:uppercase">
+                        class="no-underline text-red-900 text-2xl hover:text-white hover:p-2 hover:bg-red-700 rounded-full duration-200  hover:border-dashed hover:shadow-lg hover:uppercase">
                         Home</a></li>
                 <li><a href=""
                         class="no-underline text-red-900 text-2xl hover:text-white hover:p-2 hover:bg-red-700 rounded-full duration-200  hover:border-dashed hover:shadow-lg hover:uppercase">
@@ -43,61 +41,85 @@
 
                 <div class=" w-auto text-center text-red-800 md:text-left md:flex-grow md:pr-8 pl-4 ">
                     <h1 class="font-mono p-2 py-3  rounded-md  leading-tight text-4xl md:underline md:decoration-dotted  underline decoration-double
-          hover:bg-black hover:w-fit  hover:text-zinc-800 md:border-none duration-200 md:pl-10 cursor-pointer "> What
-                        is Halloween
-                    </h1>
+          hover:bg-black hover:w-fit  hover:text-red-500 md:border-none duration-200 md:pl-10 cursor-pointer ">
+                        Halloween: Origins and Current Traditions </h1>
                     <p class="md:text-left  text-lg text-center text-zinc-500 font-mono font-bold md:pl-10 mt-8"><i
                             class="text-center md:text-left"> By
-                            Ejay Gabriel</i>
+                            <span class="authorName"> Ejay Gabriel </span></i>
                     </p>
-                    <p class="text-zinc-500 font-bold text-lg md:pl-10">Published on: <i>October 31, 2025</i></p>
+                    <p class="text-zinc-500 font-bold text-lg md:pl-10">Published on: <i class="date">December 31,
+                            2025</i></p>
                 </div>
 
                 <!--for the image-->
-                <div class="p-4 flex justify-end max-w-full">
-                    <img src="https://tinyurl.com/halloweenImage" alt="halloween" class="rounded-lg m-auto h-auto"
-                        width="500px">
+                <div class="p-4 flex md:justify-end max-w-full mx-auto">
+                    <img src="./images/halloweenImage.jpg" alt="halloween"
+                        class="rounded-2xl m-auto h-auto hover:border-2 hover:border-red-950 duration-300"
+                        width="400px">
                 </div>
             </header>
 
             <!--Body of the blog-->
-            <div class="text-zinc-500  text-lg md:text-xl leading-snug p-10">
+            <div class="text-zinc-500  text-2xl md:text-xl leading-snug p-10">
                 <p class="">
-                    Halloween is a holiday celebrated each year on October 31. The tradition originated with the ancient
-                    Celtic festival of Samhain, when people would light bonfires and wear costumes to ward off ghosts.
+                    Halloween is a holiday
+                    <b class="text-red-800"> each year on October 31.</b>
+                    The tradition originated with
 
-                <p> In the eighth century, Pope Gregory III designated November 1 as a time to honor all saints. Soon,
+                    <b class="text-red-800">the ancient
+                        Celtic festival of Samhain, </b> when people would light bonfires and wear costumes to ward off
+                    ghosts.
+
+                <p> In the eighth century, <b class="text-red-800">Pope Gregory III designated November 1 as a time to
+                        honor all saints. </b> Soon,
                     All Saints Day incorporated some of the traditions of Samhain. The evening before was known as All
                     Hallows Eve, and later Halloween. </p>
 
-                American colonists are responsible for initially bringing Halloween to the United States. Most of the
+                <br><b class="text-red-800">American colonists are responsible for initially bringing Halloween to the
+                    United States. </b> Most of
+                the
                 colonists were Puritans and they primarily came from England which traditionally celebrated Samhain back
                 when the Celts lived there. Although the Celtic religious traditions had been long replaced by
                 Christianity, many of the old practices remained. However, since the American Colonies were influenced
                 by a variety of cultures, Halloween traditions began to change.
-                <p> In the New World, All Hallow’s Eve became a time for “play parties”, which were private parties
-                    thrown to celebrate the harvest. People would dress in costumes, read each other’s fortunes, and
-                    tell scary stories.</p>
+
+
+                <p> <br> In the New World, <b class="text-red-800"> All Hallow’s Eve became a time for “play parties”,
+                    </b> which were private parties
+                    thrown to celebrate the harvest. <b class="text-red-800"> People would dress in costumes, read each
+                        other’s fortunes, and
+                        tell scary stories.</b></p>
                 These were amongst the first Halloween parties!
 
-                Over time, Halloween evolved into a day of activities like trick-or-treating, carving jack-o-lanterns,
+                Over time, Halloween evolved into a day of activities like <b class="text-red-800"> trick-or-treating,
+                    carving jack-o-lanterns, </b>
                 festive gatherings, donning costumes and eating treats.
 
                 So…Are you ready to celebrate Halloween? Who do you plan to be?
                 </p>
 
                 <div class="">
-                    <h3 class="text-2xl md:text-red-800 mt-20"> Source</h3>
+                    <h3 class="text-2xl text-red-800 mt-20 mb-10"> Sources:</h3>
                     <p>
                         <a href="https://www.history.com/topics/halloween/history-of-halloween"
-                            class="mb-2 text-md  hover:text-red-900">https://www.history.com/topics/halloween/history-of-halloween</a>
+                            class="mb-2 text-sm  hover:text-red-900 hover:underline"><i>https://www.history.com/topics/halloween/history-of-halloween</i></a>
                     </p>
 
                     <p>
                         <a href="https://www.gourmetgiftbaskets.com/Blog/post/history-halloween-united-states.aspx"
-                            class="text-md hover:text-red-900">
-                            https://www.gourmetgiftbaskets.com/Blog/post/history-halloween-united-states.aspx</a>
+                            class="text-sm hover:text-red-900 hover:underline"><i>
+                                https://www.gourmetgiftbaskets.com/Blog/post/history-halloween-united-states.aspx
+                            </i>
+                        </a>
 
+                    </p>
+
+                    <p>
+                        <a href="https://mcallenlibrary.wordpress.com/2014/10/29/halloweens-ancient-history/"
+                            class="text-sm hover:text-red-900 hover:underline"><i>
+                                https://mcallenlibrary.wordpress.com/2014/10/29/halloweens-ancient-history/
+                            </i>
+                        </a>
                     </p>
                 </div>
 
@@ -107,11 +129,35 @@
 
     <!--footer-->
 
-    <footer class="bg-zinc-800 w-full text-center p-10 text-zinc-400 mt-48">
+    <footer class="bg-zinc-900 w-full text-center p-10 text-zinc-400 mt-48">
         <div>
-            All Rights Reserved © 2025 Ejay Gabriel
+            <p>All Rights Reserved © <span class="copyRight">2024 </span> Ejay Gabriel </p>
         </div>
     </footer>
+
+
+    <!--script-->
+    <script>
+        // for the date
+        const time = document.querySelector(".date");
+        const date = new Date();
+        time.textContent = date.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric'
+        })
+
+        // author's name
+
+        const authorName = document.querySelector(".authorName");
+        const name = "Ejay Gabriel";
+        authorName.textContent = name;
+
+        // copyRight
+        const copyRight = document.querySelector(".copyRight");
+        copyRight.textContent = date.getFullYear();
+
+    </script>
 </body>
 
 </html>
