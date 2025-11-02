@@ -27,10 +27,10 @@
                         Home</a></li>
                 <li><a href=""
                         class="no-underline text-red-900 text-2xl hover:text-white hover:p-2 hover:bg-red-700 rounded-full duration-200  hover:border-dashed hover:shadow-lg hover:uppercase">
-                        Treat</a></li>
+                        About</a></li>
                 <li><a href=""
                         class="no-underline text-red-900 text-2xl hover:text-white hover:p-2 hover:bg-red-700 rounded-full duration-200  hover:border-dashed hover:shadow-lg hover:uppercase">
-                        Trick</a></li>
+                        Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -40,14 +40,14 @@
             <header class="text-sm md:flex-row flex flex-col justify-center items-center m-0 p-0 w-full max-w-full">
 
                 <div class=" w-auto text-center text-red-800 md:text-left md:flex-grow md:pr-8 pl-4 ">
-                    <h1 class="font-mono p-2 py-3  rounded-md  leading-tight text-4xl md:underline md:decoration-dotted  underline decoration-double
+                    <h1 class="font-mono p-2 py-3  rounded-md  leading-tight text-4xl
           hover:bg-black hover:w-fit  hover:text-red-500 md:border-none duration-200 md:pl-10 cursor-pointer ">
                         Halloween: Origins and Current Traditions </h1>
                     <p class="md:text-left  text-lg text-center text-zinc-500 font-mono font-bold md:pl-10 mt-8"><i
                             class="text-center md:text-left"> By
                             <span class="authorName"> Ejay Gabriel </span></i>
                     </p>
-                    <p class="text-zinc-500 font-bold text-lg md:pl-10">Published on: <i class="date">December 31,
+                    <p class="text-zinc-500 font-bold text-lg md:pl-10">Published: <i class="date">December 31,
                             2025</i></p>
                 </div>
 
@@ -140,10 +140,10 @@
     <script>
         // for the date
         const time = document.querySelector(".date");
-        const date = new Date();
+        const date = new Date(2025, 9, 31);
         time.textContent = date.toLocaleDateString('en-US', {
             year: 'numeric',
-            month: 'short',
+            month: 'long',
             day: 'numeric'
         })
 
